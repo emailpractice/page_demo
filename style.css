@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    /*讓跳轉anchor的時候是滑下去的 而不是直接跳轉*/
+}
+
+
+
+/*
+img {
+    display: block;
+    vertical-align: text-bottom;
+}
+*/
+.bground_not_blur {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    opacity: 100%;
+    position: fixed;
+    margin: auto;
+    filter: blur(6px);
+    animation-name: blur_out_bg;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blur_out_bg {
+    from {
+        filter: blur(6px);
+
+    }
+
+    to {
+        filter: blur(0px);
+    }
+}
+
+.bground_blur {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    margin: auto;
+    opacity: 100%;
+    animation-duration: 1s;
+    animation-name: blur_in_bg;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blur_in_bg {
+    from {
+        filter: blur(0px);
+
+    }
+
+    to {
+        filter: blur(6px);
+    }
+}
+
+
+.black_not_overlay {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    border: 3px;
+    opacity: 50%;
+    background-color: black;
+    animation-name: fade_out_overlay;
+    animation-duration: 1s;
+    animation-delay: 90ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fade_out_overlay {
+    from {
+        opacity: 50%;
+
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+.black_overlay {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    border: 3px;
+    opacity: 0%;
+    background-color: black;
+    animation-name: fade_in_overlay;
+    animation-duration: 1s;
+    animation-delay: 50ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fade_in_overlay {
+    from {
+        opacity: 0%;
+
+    }
+
+    to {
+        opacity: 50%;
+    }
+}
+
+
+
+.show_logo1 {
+    position: absolute;
+    top: -5%;
+    left: -3%;
+    opacity: 0;
+    animation-name: fade_in_logo1;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade_in_logo1 {
+    from {
+        opacity: 0%;
+
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.not_show_logo1 {
+    position: absolute;
+    top: -5%;
+    left: -3%;
+    animation-name: fade_out_logo1;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade_out_logo1 {
+    from {
+        opacity: 100%;
+
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+.fbicon {
+    position: fixed;
+    top: 4.5%;
+    right: 6%;
+    background-image: url(./Facebook徽標.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.anchor_button_order_page {
+    width: 110px;
+    height: 50px;
+    background-color: brown;
+    border-radius: 3px;
+    position: fixed;
+    top: 5%;
+    left: 83%;
+    font-size: 18px;
+    text-align: center;
+    color: aliceblue;
+    z-index: 1;
+}
+
+
+.show_start_your_order_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: 50px;
+    animation-name: fade_in_start_your_order_text;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+@keyframes fade_in_start_your_order_text {
+    from {
+        opacity: 0%;
+
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.not_show_start_your_order_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: 50px;
+    animation-name: fade_out_start_your_order_text;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+@keyframes fade_out_start_your_order_text {
+    from {
+        opacity: 100%;
+
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+
+
+.pls_scroll_down {
+    position: fixed;
+    width: 2px;
+    height: 60px;
+    background-color: brown;
+    animation-name: going_downward;
+    animation-duration: 1.3s;
+    animation-delay: 90ms;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes going_downward {
+    0% {
+
+        left: 50%;
+        bottom: 4%;
+        opacity: 0%;
+    }
+
+
+
+    100% {
+        left: 50%;
+        bottom: -80px;
+        opacity: 100%;
+    }
+}
+
+.pls_scroll_down_not_showed {
+    position: fixed;
+    width: 2px;
+    height: 60px;
+    background-color: brown;
+    animation-name: scroll_down_not_showed;
+    animation-duration: 1.3s;
+    animation-delay: 90ms;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes scroll_down_not_showed {
+    0% {
+
+        opacity: 100%;
+    }
+
+
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+
+.show_scroll_text_vertical {
+    writing-mode: vertical-lr;
+    position: fixed;
+    top: 80%;
+    left: 49.5%;
+    font-size: 20px;
+    color: aliceblue;
+    animation-name: show_scroll_text;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+
+@keyframes show_scroll_text {
+    0% {
+
+        opacity: 0%;
+    }
+
+
+
+    100% {
+
+        opacity: 100%;
+    }
+}
+
+.not_show_scroll_text_vertical {
+    writing-mode: vertical-lr;
+    position: fixed;
+    top: 80%;
+    left: 49.5%;
+    font-size: 20px;
+    color: aliceblue;
+    animation-name: not_show_scroll_text;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes not_show_scroll_text {
+    0% {
+
+        opacity: 100%;
+    }
+
+
+
+    100% {
+
+        opacity: 0%;
+    }
+}
+
+.parser {
+    padding-bottom: 48%;
+}
+
+/*showcase top text    aroma page text  +  tittle    left長度有問題*/
+.showcase_toptext {
+    position: absolute;
+    left: 50%;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.text_decorative_line {
+    position: relative;
+    top: -10px;
+    left: 25%;
+    width: 75px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.showcase_pic {
+    position: relative;
+    left: 45%;
+}
+
+.showcase_text {
+    writing-mode: vertical-lr;
+    position: relative;
+    left: 25%;
+    top: 150px;
+    color: aliceblue;
+    font-size: 35px;
+}
+
+.the_aroma_page_bg {
+
+    display: grid;
+    height: 100%;
+    width: 100%;
+
+    padding-top: 160px;
+    opacity: 40%;
+}
+
+.the_aroma_page_tittle {
+
+    font-size: 30px;
+    position: absolute;
+    top: 3450px;
+    left: 50%;
+    color: aliceblue;
+    padding-bottom: 15px;
+}
+
+.the_aroma_page_text {
+
+    font-size: 25px;
+    position: absolute;
+    top: 3500px;
+    left: 50%;
+    color: aliceblue;
+
+
+}
+
+#the_order_page {
+    position: relative;
+    top: -35px;
+}
+
+.parser2 {
+    padding-bottom: 20%;
+}
+
+.messanger_example {
+    position: relative;
+    top: 100px;
+}
+
+.dm_us_to_order {
+    position: absolute;
+    top: 4200px;
+    left: 15%;
+    color: aliceblue;
+}
