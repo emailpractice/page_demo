@@ -5,14 +5,22 @@
     /*讓跳轉anchor的時候是滑下去的 而不是直接跳轉*/
 }
 
+/*ctrl + 滾輪的那種放大 是會很大程度影響排版的。 如果看到liverserver上面
+有異樣，要記得先檢查放大比例是不是100。 不然程式碼調半天白搭。*/
 
 
-/*
+/*refresh 幾次之後 每次refresh都會自動跳到anchor連結的order page。*/
+main {
+    width: min(70ch, 100%-4rem);
+    margin-inline: auto;
+}
+
 img {
+
     display: block;
     vertical-align: text-bottom;
 }
-*/
+
 .bground_not_blur {
     display: grid;
     height: 100%;
@@ -126,6 +134,31 @@ img {
     animation-fill-mode: forwards;
 }
 
+@media (max-width:1200px) {
+    .show_logo1 {
+        width: 175px;
+        position: absolute;
+        top: -5%;
+        left: -3%;
+        opacity: 0;
+        animation-name: fade_in_logo1;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fade_in_logo1 {
+        from {
+            opacity: 0%;
+
+        }
+
+        to {
+            opacity: 100%;
+        }
+    }
+}
+
 @keyframes fade_in_logo1 {
     from {
         opacity: 0%;
@@ -159,14 +192,32 @@ img {
 }
 
 .fbicon {
+    width: 75px;
     position: fixed;
-    top: 4.5%;
-    right: 6%;
+    top: 3%;
+    right: 1%;
     background-image: url(./Facebook徽標.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
+
+@media (max-width:1100px) {
+    .fbicon {
+        width: 80px;
+        position: fixed;
+        top: 3%;
+        right: -1%;
+        background-image: url(./Facebook徽標.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+#anchor_button {}
 
 .anchor_button_order_page {
     width: 110px;
@@ -176,11 +227,57 @@ img {
     position: fixed;
     top: 5%;
     left: 83%;
-    font-size: 18px;
-    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: aliceblue;
     z-index: 1;
 }
+
+.anchor_button_order_page:hover {
+    color: #fff;
+    background-color: #000
+}
+
+@media (max-width:1100px) {
+    .anchor_button_order_page {
+        width: 110px;
+        height: 50px;
+        background-color: brown;
+        border-radius: 3px;
+        position: fixed;
+        top: 5%;
+        left: 80%;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        z-index: 1;
+    }
+
+}
+
+@media (max-width:768px) {
+    .anchor_button_order_page {
+        width: 110px;
+        height: 50px;
+        background-color: brown;
+        border-radius: 3px;
+        position: fixed;
+        top: 5%;
+        left: 60%;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        z-index: 1;
+    }
+
+}
+
 
 
 .show_start_your_order_text {
@@ -189,12 +286,40 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     color: aliceblue;
-    font-size: 50px;
+    font-size: 5rem;
     animation-name: fade_in_start_your_order_text;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     opacity: 0%;
+}
+
+@media (max-width:768px) {
+    .show_start_your_order_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: aliceblue;
+        font-size: 2rem;
+        animation-name: fade_in_start_your_order_text;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        opacity: 0%;
+    }
+
+    @keyframes fade_in_start_your_order_text {
+        from {
+            opacity: 0%;
+
+        }
+
+        to {
+            opacity: 100%;
+        }
+    }
+
 }
 
 @keyframes fade_in_start_your_order_text {
@@ -214,13 +339,43 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     color: aliceblue;
-    font-size: 50px;
+    font-size: 5rem;
     animation-name: fade_out_start_your_order_text;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     opacity: 0%;
 }
+
+@media (max-width:768px) {
+    .not_show_start_your_order_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: aliceblue;
+        font-size: 2rem;
+        animation-name: fade_out_start_your_order_text;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        opacity: 0%;
+    }
+
+    @keyframes fade_out_start_your_order_text {
+        from {
+            opacity: 100%;
+
+        }
+
+        to {
+            opacity: 0%;
+        }
+    }
+
+
+}
+
 
 @keyframes fade_out_start_your_order_text {
     from {
@@ -235,11 +390,12 @@ img {
 
 
 
+
 .pls_scroll_down {
-    position: fixed;
-    width: 2px;
+    position: absolute;
+    width: 3px;
     height: 60px;
-    background-color: brown;
+    background-color: rgb(168, 170, 38);
     animation-name: going_downward;
     animation-duration: 1.3s;
     animation-delay: 90ms;
@@ -250,7 +406,7 @@ img {
 @keyframes going_downward {
     0% {
 
-        left: 50%;
+        left: 49.8%;
         bottom: 4%;
         opacity: 0%;
     }
@@ -258,14 +414,14 @@ img {
 
 
     100% {
-        left: 50%;
+        left: 49.8%;
         bottom: -80px;
         opacity: 100%;
     }
 }
 
 .pls_scroll_down_not_showed {
-    position: fixed;
+    position: absolute;
     width: 2px;
     height: 60px;
     background-color: brown;
@@ -292,10 +448,11 @@ img {
 
 .show_scroll_text_vertical {
     writing-mode: vertical-lr;
-    position: fixed;
+    position: absolute;
     top: 80%;
-    left: 49.5%;
-    font-size: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 2rem;
     color: aliceblue;
     animation-name: show_scroll_text;
     animation-duration: 0.3s;
@@ -321,10 +478,11 @@ img {
 
 .not_show_scroll_text_vertical {
     writing-mode: vertical-lr;
-    position: fixed;
+    position: absolute;
     top: 80%;
-    left: 49.5%;
-    font-size: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 2rem;
     color: aliceblue;
     animation-name: not_show_scroll_text;
     animation-duration: 0.2s;
@@ -348,69 +506,128 @@ img {
 }
 
 .parser {
-    padding-bottom: 48%;
+    padding-bottom: 50%;
 }
 
 /*showcase top text    aroma page text  +  tittle    left長度有問題*/
+/*dm us to order也有讓水平需要多滑*/
+
+
 .showcase_toptext {
     position: absolute;
-    left: 50%;
+    width: 500px;
     color: aliceblue;
-    font-size: 40px;
+    font-size: 3rem;
+    left: 44%;
+    top: 785px;
 }
 
-.text_decorative_line {
-    position: relative;
-    top: -10px;
-    left: 25%;
-    width: 75px;
-    height: 3px;
+.showcase_toptext_line {
+    position: absolute;
+    left: 48.5%;
+    top: 860px;
+    width: 45px;
+    height: 2px;
     background-color: white;
-    margin-bottom: 20px;
+
+}
+
+
+@media (max-width:1200px) {
+    .showcase_toptext {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        color: aliceblue;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:768px) {
+    .showcase_toptext {
+        position: absolute;
+        left: 50%;
+        color: aliceblue;
+        font-size: 2rem;
+    }
+}
+
+
+
+.image-wrapper {
+    display: flex;
 }
 
 .showcase_pic {
     position: relative;
-    left: 45%;
+    left: 50.4%;
+    margin-top: 180px;
+    box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
 }
 
 .showcase_text {
     writing-mode: vertical-lr;
     position: relative;
-    left: 25%;
-    top: 150px;
+    left: -6%;
+    top: 65px;
     color: aliceblue;
-    font-size: 35px;
+    font-size: 2rem;
+    text-align: center;
 }
 
-.the_aroma_page_bg {
+.showcase_text_line {
+    position: relative;
+    left: -3.2%;
+    top: 275px;
+    width: 40px;
+    height: 1px;
+    background-color: white;
 
-    display: grid;
-    height: 100%;
-    width: 100%;
-
-    padding-top: 160px;
-    opacity: 40%;
 }
 
-.the_aroma_page_tittle {
+.showcase_text_line2 {
+    position: relative;
+    left: -8.5%;
+    top: 500px;
+    width: 40px;
+    height: 2px;
+    background-color: white;
+}
 
-    font-size: 30px;
-    position: absolute;
-    top: 3450px;
-    left: 50%;
+
+
+
+.aroma_the_page_tittle {
+
+    font-size: 3rem;
+    position: relative;
+    width: 500px;
+    top: -330px;
+    left: 39.5%;
     color: aliceblue;
     padding-bottom: 15px;
 }
 
-.the_aroma_page_text {
+.aroma_the_page_text {
 
-    font-size: 25px;
-    position: absolute;
-    top: 3500px;
-    left: 50%;
+    font-size: 2rem;
+    width: 500px;
+    position: relative;
+    top: -330px;
+    left: 39.5%;
     color: aliceblue;
+}
 
+.aroma_the_page_img {
+
+    /* Set up proportionate scaling */
+    width: 1000px;
+    height: auto;
+    left: 17%;
+    /* Set up positioning */
+    position: relative;
+    transform: rotate(3.5deg);
+    margin-top: 110px;
 
 }
 
@@ -419,18 +636,44 @@ img {
     top: -35px;
 }
 
+
 .parser2 {
     padding-bottom: 20%;
 }
 
-.messanger_example {
+.dm_us_to_order {
+    width: 500px;
+    /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
+    font-size: 2rem;
     position: relative;
-    top: 100px;
+    top: -680px;
+    left: 21%;
+    color: aliceblue;
 }
 
-.dm_us_to_order {
-    position: absolute;
-    top: 4200px;
-    left: 15%;
-    color: aliceblue;
+.messanger_example {
+    position: relative;
+    top: 10px;
+    left: 11%;
+}
+
+
+
+.price_text {
+    position: relative;
+    width: 900px;
+    top: -89.5px;
+    left: 32%;
+    color: #fff;
+}
+
+.foot {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 150px;
+    text-align: right;
+    line-height: 65px;
 }
