@@ -1,3 +1,9 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body {
+    font-family: 'Noto Sans TC', sans-serif !important;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +32,7 @@ img {
 }
 
 .fb-customerchat {
+    /*改位置資訊看起來是沒甚麼用。 可能還是只會依照fb的數據去改*/
     position: relative;
     left: 600px;
 }
@@ -134,8 +141,8 @@ img {
 
 .show_logo1 {
     position: absolute;
-    top: -5%;
-    left: -3%;
+    top: -10%;
+    left: -4%;
     opacity: 0;
     animation-name: fade_in_logo1;
     animation-duration: 0.3s;
@@ -145,10 +152,10 @@ img {
 
 @media (max-width:1200px) {
     .show_logo1 {
-        width: 175px;
+
         position: absolute;
-        top: -5%;
-        left: -3%;
+        top: -10%;
+        left: -4%;
         opacity: 0;
         animation-name: fade_in_logo1;
         animation-duration: 0.3s;
@@ -181,8 +188,8 @@ img {
 
 .not_show_logo1 {
     position: absolute;
-    top: -5%;
-    left: -3%;
+    top: -10%;
+    left: -4%;
     animation-name: fade_out_logo1;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
@@ -201,10 +208,10 @@ img {
 }
 
 .fbicon {
-    width: 75px;
+    width: 50px;
     position: fixed;
-    top: 3%;
-    right: 1%;
+    top: 5%;
+    right: 2%;
     background-image: url(./Facebook徽標.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -226,22 +233,23 @@ img {
 }
 
 
-#anchor_button {}
-
 .anchor_button_order_page {
-    width: 110px;
-    height: 50px;
+    width: 125px;
+    height: 57px;
     background-color: brown;
     border-radius: 3px;
     position: fixed;
     top: 5%;
     left: 83%;
-    font-size: 1rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: aliceblue;
     z-index: 1;
+    font-family: sans-serif Helvetica;
+
+
 }
 
 .anchor_button_order_page:hover {
@@ -291,26 +299,27 @@ img {
 
 .show_start_your_order_text {
     position: absolute;
-    top: 50%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: aliceblue;
-    font-size: 5rem;
+    font-size: 4rem;
     animation-name: fade_in_start_your_order_text;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     opacity: 0%;
+
 }
 
 @media (max-width:768px) {
     .show_start_your_order_text {
         position: absolute;
-        top: 50%;
+        top: 42%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: aliceblue;
-        font-size: 2rem;
+        font-size: 4rem;
         animation-name: fade_in_start_your_order_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
@@ -344,26 +353,27 @@ img {
 
 .not_show_start_your_order_text {
     position: absolute;
-    top: 50%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: aliceblue;
-    font-size: 5rem;
+    font-size: 4rem;
     animation-name: fade_out_start_your_order_text;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     opacity: 0%;
+
 }
 
 @media (max-width:768px) {
     .not_show_start_your_order_text {
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: aliceblue;
-        font-size: 2rem;
+        font-size: 4rem;
         animation-name: fade_out_start_your_order_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
@@ -402,9 +412,9 @@ img {
 
 .pls_scroll_down {
     position: absolute;
-    width: 3px;
+    width: 1.5px;
     height: 60px;
-    background-color: rgb(168, 170, 38);
+    background-color: rgb(170, 150, 38);
     animation-name: going_downward;
     animation-duration: 1.3s;
     animation-delay: 90ms;
@@ -431,7 +441,7 @@ img {
 
 .pls_scroll_down_not_showed {
     position: absolute;
-    width: 2px;
+    width: 1.5px;
     height: 60px;
     background-color: brown;
     animation-name: scroll_down_not_showed;
@@ -461,7 +471,9 @@ img {
     top: 80%;
     left: 50%;
     transform: translate(-50%, 0%);
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-family: 'monospace' 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
     color: aliceblue;
     animation-name: show_scroll_text;
     animation-duration: 0.3s;
@@ -570,7 +582,7 @@ img {
 .showcase_pic {
     position: relative;
     left: 50.4%;
-    margin-top: 180px;
+    margin-top: 140px;
     box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
 }
 
@@ -587,7 +599,7 @@ img {
 .showcase_text_line {
     position: relative;
     left: -3.2%;
-    top: 275px;
+    top: 270px;
     width: 40px;
     height: 1px;
     background-color: white;
@@ -596,10 +608,10 @@ img {
 
 .showcase_text_line2 {
     position: relative;
-    left: -8.5%;
-    top: 500px;
+    left: -8.6%;
+    top: 460px;
     width: 40px;
-    height: 2px;
+    height: 1px;
     background-color: white;
 }
 
@@ -623,19 +635,43 @@ img {
     width: 500px;
     position: relative;
     top: -330px;
-    left: 39.5%;
+    left: 39.7%;
     color: aliceblue;
+
 }
 
-.aroma_the_page_img {
+.aroma_the_page_text2 {
+
+    font-size: 2rem;
+    width: 500px;
+    position: relative;
+    top: -330px;
+    left: 35.7%;
+    color: aliceblue;
+
+}
+
+.aroma_the_page_text3 {
+
+    font-size: 2rem;
+    width: 500px;
+    position: relative;
+    top: -330px;
+    left: 34%;
+    color: aliceblue;
+
+}
+
+
+.whole_set_img {
 
     /* Set up proportionate scaling */
-    width: 1000px;
+    width: 900px;
     height: auto;
-    left: 17%;
+    left: 20%;
     /* Set up positioning */
     position: relative;
-    transform: rotate(3.5deg);
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.7);
     margin-top: 110px;
 
 }
@@ -674,6 +710,7 @@ img {
     top: -89.5px;
     left: 32%;
     color: #fff;
+
 }
 
 .foot {
@@ -685,4 +722,5 @@ img {
     margin-top: 150px;
     text-align: right;
     line-height: 65px;
+
 }
