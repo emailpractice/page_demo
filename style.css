@@ -10,6 +10,9 @@
 
 
 /*refresh 幾次之後 每次refresh都會自動跳到anchor連結的order page。*/
+/*重作logo 因為上下文字顏色不一樣 這次記得準備好方便調色的版本? 或至少黑白色都要做*/
+
+
 main {
     width: min(70ch, 100%-4rem);
     margin-inline: auto;
@@ -22,7 +25,10 @@ img {
     vertical-align: text-bottom;
 }
 
-
+.fb-customerchat {
+    position: relative;
+    left: 600px;
+}
 
 .bground_not_blur {
     display: grid;
