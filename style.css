@@ -15,11 +15,14 @@ main {
     margin-inline: auto;
 }
 
+
 img {
 
     display: block;
     vertical-align: text-bottom;
 }
+
+
 
 .bground_not_blur {
     display: grid;

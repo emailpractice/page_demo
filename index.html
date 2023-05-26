@@ -9,12 +9,45 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <script src="scroll_timeline.js" type="module"></script>
+
+
 </head>
 
 <body>
+    <!-- Messenger 洽談外掛程式 Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your 洽談外掛程式 code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "102118339478714");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v17.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
 
     <img class=" bground_not_blur" id="ele_bg" src="./廚師手 下面加黑.png" alt="">
-    <img class="show_logo1" src="./稍飽logo2 白.png" width="15%" id="ele_logo1" alt="">
+    <img class="show_logo1" src="./稍飽logo3 白.png" width="15%" id="ele_logo1" alt="">
     <div class="black_not_overlay" id="ele_overlay"></div>
     <div class="show_start_your_order_text" id="ele_start_your_order_text">餐點展示</div>
     <a href="https://www.facebook.com/crispyporkset">
