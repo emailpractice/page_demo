@@ -45,6 +45,7 @@ img {
     position: fixed;
     margin: auto;
     filter: blur(6px);
+    animation-duration: 0.7s;
     animation-name: blur_out_bg;
     animation-fill-mode: forwards;
 }
@@ -67,7 +68,7 @@ img {
     position: fixed;
     margin: auto;
     opacity: 100%;
-    animation-duration: 1s;
+    animation-duration: 0.6s;
     animation-name: blur_in_bg;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -93,7 +94,7 @@ img {
     opacity: 50%;
     background-color: black;
     animation-name: fade_out_overlay;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-delay: 90ms;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -119,7 +120,7 @@ img {
     opacity: 0%;
     background-color: black;
     animation-name: fade_in_overlay;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-delay: 50ms;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -299,10 +300,10 @@ img {
 
 .show_start_your_order_text {
     position: absolute;
-    top: 42%;
+    top: 42.5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: aliceblue;
+    color: rgb(252, 252, 252);
     font-size: 4rem;
     animation-name: fade_in_start_your_order_text;
     animation-duration: 0.3s;
@@ -443,7 +444,7 @@ img {
     position: absolute;
     width: 1.5px;
     height: 60px;
-    background-color: brown;
+    background-color: rgb(170, 150, 38);
     animation-name: scroll_down_not_showed;
     animation-duration: 1.3s;
     animation-delay: 90ms;
@@ -503,7 +504,7 @@ img {
     top: 80%;
     left: 50%;
     transform: translate(-50%, 0%);
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: aliceblue;
     animation-name: not_show_scroll_text;
     animation-duration: 0.2s;
@@ -608,8 +609,8 @@ img {
 
 .showcase_text_line2 {
     position: relative;
-    left: -8.6%;
-    top: 460px;
+    left: -8.9%;
+    top: 458px;
     width: 40px;
     height: 1px;
     background-color: white;
