@@ -1,0 +1,11 @@
+.scroll_tracker {
+    height: .5rem;
+    background-color: aqua;
+    position: fixed;
+    inset: 0 0 auto;
+}
+
+.black_opacity_bg {
+    background-color: black;
+    opacity: 30%;
+}
