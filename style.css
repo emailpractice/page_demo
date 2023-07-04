@@ -579,157 +579,159 @@ img {
     font-size: 20px;
 }
 
-@media (max-width: 645px) {
+@media (max-width: 600px) {
     .container {
-        font-size: 10px;
-    }
-
-    .showcase_pic {
-        position: relative;
-        width: 30em;
-        height: 25em;
-        left: 50.4%;
-        margin-top: 140px;
-        box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
-    }
-
-    .showcase_text {
-        writing-mode: vertical-lr;
-        position: relative;
-        left: -6%;
-        top: 65px;
-        color: aliceblue;
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .showcase_text_line {
-        position: relative;
-        left: -3.1%;
-        top: 270px;
-        width: 40px;
-        height: 1px;
-        background-color: white;
-
-    }
-
-    .showcase_text_line2 {
-        position: relative;
-        left: -8.6%;
-        top: 458px;
-        width: 40px;
-        height: 1px;
-        background-color: white;
-    }
-
-
-
-
-    .aroma_the_page_tittle {
-
-        font-size: 3rem;
-        position: relative;
-        width: 500px;
-        top: -330px;
-        left: 43.5%;
-        color: aliceblue;
-        padding-bottom: 15px;
-    }
-
-    .aroma_the_page_text {
-
-        font-size: 2rem;
-        width: 500px;
-        position: relative;
-        top: -330px;
-        left: 42.7%;
-        color: aliceblue;
-
-    }
-
-    .aroma_the_page_text2 {
-
-        font-size: 2rem;
-        width: 500px;
-        position: relative;
-        top: -330px;
-        left: 38.7%;
-        color: aliceblue;
-
-    }
-
-    .aroma_the_page_text3 {
-
-        font-size: 2rem;
-        width: 500px;
-        position: relative;
-        top: -330px;
-        left: 37%;
-        color: aliceblue;
-
-    }
-
-
-    .whole_set_img {
-
-        /* Set up proportionate scaling */
-        width: 900px;
-        height: auto;
-        left: 20%;
-        /* Set up positioning */
-        position: relative;
-        box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.7);
-        margin-top: 110px;
-
-    }
-
-    #the_order_page {
-        position: relative;
-        top: -35px;
-    }
-
-
-    .parser2 {
-        padding-bottom: 20%;
-    }
-
-    .dm_us_to_order {
-        width: 500px;
-        /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
-        font-size: 2rem;
-        position: relative;
-        top: -680px;
-        left: 21%;
-        color: aliceblue;
-    }
-
-    .messanger_example {
-        position: relative;
-        top: 10px;
-        left: 11%;
-    }
-
-
-
-    .price_text {
-        position: relative;
-        width: 900px;
-        top: -89.5px;
-        left: 32%;
-        color: #fff;
-
-    }
-
-    .foot {
-        position: relative;
         width: 100%;
-        height: 40px;
-        background-color: #000;
-        color: #fff;
-        margin-top: 150px;
-
-        text-indent: 71em;
-
-        line-height: 20px;
-
+        padding: 10px;
     }
+}
+
+.showcase_pic {
+    position: relative;
+    width: 30em;
+    height: 25em;
+    left: 50.4%;
+    margin-top: 140px;
+    box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
+}
+
+.showcase_text {
+    writing-mode: vertical-lr;
+    position: relative;
+    left: -6%;
+    top: 65px;
+    color: aliceblue;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.showcase_text_line {
+    position: relative;
+    left: -3.1%;
+    top: 270px;
+    width: 40px;
+    height: 1px;
+    background-color: white;
+
+}
+
+.showcase_text_line2 {
+    position: relative;
+    left: -8.6%;
+    top: 458px;
+    width: 40px;
+    height: 1px;
+    background-color: white;
+}
+
+
+
+
+.aroma_the_page_tittle {
+
+    font-size: 3rem;
+    position: relative;
+    width: 500px;
+    top: -330px;
+    left: 43.5%;
+    color: aliceblue;
+    padding-bottom: 15px;
+}
+
+.aroma_the_page_text {
+
+    font-size: 2rem;
+    width: 500px;
+    position: relative;
+    top: -330px;
+    left: 42.7%;
+    color: aliceblue;
+
+}
+
+.aroma_the_page_text2 {
+
+    font-size: 2rem;
+    width: 500px;
+    position: relative;
+    top: -330px;
+    left: 38.7%;
+    color: aliceblue;
+
+}
+
+.aroma_the_page_text3 {
+
+    font-size: 2rem;
+    width: 500px;
+    position: relative;
+    top: -330px;
+    left: 37%;
+    color: aliceblue;
+
+}
+
+
+.whole_set_img {
+
+    /* Set up proportionate scaling */
+    width: 900px;
+    height: auto;
+    left: 20%;
+    /* Set up positioning */
+    position: relative;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.7);
+    margin-top: 110px;
+
+}
+
+#the_order_page {
+    position: relative;
+    top: -35px;
+}
+
+
+.parser2 {
+    padding-bottom: 20%;
+}
+
+.dm_us_to_order {
+    width: 500px;
+    /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
+    font-size: 2rem;
+    position: relative;
+    top: -680px;
+    left: 21%;
+    color: aliceblue;
+}
+
+.messanger_example {
+    position: relative;
+    top: 10px;
+    left: 11%;
+}
+
+
+
+.price_text {
+    position: relative;
+    width: 900px;
+    top: -89.5px;
+    left: 32%;
+    color: #fff;
+
+}
+
+.foot {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 150px;
+
+    text-indent: 71em;
+
+    line-height: 20px;
+
+}
