@@ -109,7 +109,7 @@ img {
 .black_overlay {
     position: fixed;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     border: 3px;
     opacity: 0%;
     background-color: black;
