@@ -686,9 +686,9 @@ html {
     }
 
     .fbicon {
-        width: 2.25rem;
+        width: 1.6rem;
         position: fixed;
-        top: 5vh;
+        top: 5.5vh;
         left: 89vw;
         background-image: url(./Facebook徽標.png);
     }
@@ -874,7 +874,7 @@ html {
         /* Set up proportionate scaling */
         width: 85vw;
         height: auto;
-        left: 16vw;
+        left: 8vw;
         top: 100vh;
         /* Set up positioning */
         position: relative;
@@ -885,7 +885,7 @@ html {
 
     #the_order_page {
         position: absolute;
-        top: 760vh;
+        top: 1360vh;
     }
 
     .dm_us_to_order {
