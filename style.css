@@ -679,7 +679,7 @@ html {
     @keyframes going_downward {
         0% {
             left: 49.3vw;
-            bottom: 20%;
+            bottom: 10%;
 
         }
 
@@ -696,7 +696,7 @@ html {
     .show_scroll_text_vertical {
         writing-mode: vertical-lr;
         position: absolute;
-        top: 75vh;
+        top: 80vh;
         left: 49.3vw;
         transform: translate(-50%, 0%);
         font-size: 1rem;
@@ -714,7 +714,7 @@ html {
     .not_show_scroll_text_vertical {
         writing-mode: vertical-lr;
         position: absolute;
-        top: 75vh;
+        top: 80vh;
         left: 49.3vw;
         transform: translate(-50%, 0%);
         font-size: 1rem;
