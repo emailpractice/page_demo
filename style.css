@@ -296,12 +296,12 @@ html {
 
 }
 
-@media screen and (max-width:475px) {
+@media screen and (max-width:474.99px) {
     .fbicon {
         width: 1.5rem;
         position: fixed;
         top: 5vh;
-        left: 94vw;
+        left: 92vw;
         background-image: url(./Facebook徽標.png);
     }
 
@@ -312,7 +312,7 @@ html {
         border-radius: 3px;
         position: fixed;
         top: 4.5vh;
-        left: 80vw;
+        left: 78vw;
         font-size: 0.5rem;
         display: flex;
         justify-content: center;
@@ -321,9 +321,102 @@ html {
         z-index: 20;
     }
 
+    .aroma_the_page_tittle {
+
+        font-size: 2.5vw;
+        position: relative;
+        width: 500px;
+        top: -65vh;
+        left: 44.5vw;
+        color: aliceblue;
+        padding-bottom: 15px;
+    }
+
+    .aroma_the_page_text {
+
+        font-size: 2vw;
+        width: 500px;
+        position: relative;
+        top: -65vh;
+        left: 42.7vw;
+        color: aliceblue;
+
+    }
+
+    .aroma_the_page_text2 {
+
+        font-size: 2vw;
+        width: 500px;
+        position: relative;
+        top: -65vh;
+        left: 40vw;
+        color: aliceblue;
+
+    }
+
+    .aroma_the_page_text3 {
+
+        font-size: 2vw;
+        width: 500px;
+        position: relative;
+        top: -65vh;
+        left: 38vw;
+        color: aliceblue;
+
+    }
+
+    .whole_set_img {
+
+        /* Set up proportionate scaling */
+        width: 70vw;
+        height: auto;
+        left: 25vw;
+        top: -20vh;
+        /* Set up positioning */
+        position: relative;
+        box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.7);
+        margin-top: 110px;
+
+    }
+
+    #the_order_page {
+        position: absolute;
+        top: 830vh;
+    }
+
+    .dm_us_to_order {
+        width: 50vw;
+        /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
+        font-size: 2vw;
+        position: relative;
+        top: -85vh;
+        left: 21%;
+        color: aliceblue;
+    }
+
+    .messanger_example {
+        position: relative;
+        width: 250vw;
+        top: 10vh;
+        left: 11vw;
+    }
+
+
+    .price_text {
+        position: relative;
+        width: 30vw;
+        top: 0vh;
+        left: 32%;
+        font-size: 1.5vw;
+        color: #fff;
+
+    }
+
+
+
     .foot {
         position: relative;
-        top: 0vh;
+        top: 20vh;
         width: 100vw;
         height: 40px;
         background-color: #000;
@@ -334,12 +427,8 @@ html {
 
     }
 
-    .messanger_example {
-        position: relative;
-        width: 200vw;
-        top: -10vh;
-        left: 11vw;
-    }
+
+
 
 }
 
@@ -696,8 +785,7 @@ html {
 
 
 /* 從scroll頁面到結尾 */
-@media screen and (max-width: 768px) {
-
+@media (min-width: 475px) and (max-width: 767.99px) {
     @keyframes going_downward {
         0% {
             left: 49.3vw;
@@ -710,9 +798,6 @@ html {
 
         }
     }
-
-
-
 
     .show_scroll_text_vertical {
         writing-mode: vertical-lr;
