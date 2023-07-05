@@ -210,7 +210,7 @@ html {
     .show_logo1 {
         position: relative;
         width: 20vw;
-        top: -4vw;
+        top: -3vw;
         left: -1vw;
         opacity: 0;
         animation-name: fade_in_logo1;
@@ -222,7 +222,7 @@ html {
     .not_show_logo1 {
         position: relative;
         width: 20vw;
-        top: -4vw;
+        top: -3vw;
         left: -1vw;
         animation-name: fade_out_logo1;
         animation-duration: 0.3s;
@@ -262,6 +262,13 @@ html {
     z-index: 1;
 }
 
+.anchor_button_order_page:hover {
+    color: #fff;
+    background-color: #000
+}
+
+
+
 @media screen and (max-width:1280px) {
     .fbicon {
         width: 1.5rem;
@@ -269,7 +276,6 @@ html {
         top: 5vh;
         left: 94vw;
         background-image: url(./Facebook徽標.png);
-
     }
 
     .anchor_button_order_page {
@@ -288,15 +294,34 @@ html {
         z-index: 20;
     }
 
-
-
 }
 
-.anchor_button_order_page:hover {
-    color: #fff;
-    background-color: #000
-}
+@media screen and (max-width:475px) {
+    .fbicon {
+        width: 1rem;
+        position: fixed;
+        top: 5vh;
+        left: 94vw;
+        background-image: url(./Facebook徽標.png);
+    }
 
+    .anchor_button_order_page {
+        width: 3rem;
+        height: 2 rem;
+        background-color: brown;
+        border-radius: 3px;
+        position: fixed;
+        top: 4.5vh;
+        left: 80vw;
+        font-size: 0.33rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        z-index: 20;
+    }
+
+}
 
 
 
