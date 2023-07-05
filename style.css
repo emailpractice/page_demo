@@ -20,6 +20,7 @@ html {
 
 
 
+
 /*ctrl + 滾輪的那種放大 是會很大程度影響排版的。 如果看到liverserver上面
 有異樣，要記得先檢查放大比例是不是100。 不然程式碼調半天白搭。*/
 
@@ -218,17 +219,6 @@ html {
         animation-fill-mode: forwards;
     }
 
-    @keyframes fade_in_logo1 {
-        from {
-            opacity: 0%;
-
-        }
-
-        to {
-            opacity: 100%;
-        }
-    }
-
     .not_show_logo1 {
         position: relative;
         width: 20vw;
@@ -238,17 +228,6 @@ html {
         animation-duration: 0.3s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-    }
-
-    @keyframes fade_out_logo1 {
-        from {
-            opacity: 100%;
-
-        }
-
-        to {
-            opacity: 0%;
-        }
     }
 }
 
@@ -266,7 +245,6 @@ html {
 }
 
 
-
 /*字體加粗一些會比較好看。可能是微軟正黑體? 或是直接加粗?*/
 .anchor_button_order_page {
     width: 6vw;
@@ -281,10 +259,7 @@ html {
     justify-content: center;
     align-items: center;
     color: aliceblue;
-    z-index: 2;
-
-
-
+    z-index: 1;
 }
 
 @media screen and (max-width:1280px) {
@@ -368,9 +343,6 @@ html {
 
 }
 
-
-
-
 @keyframes fade_out_start_your_order_text {
     from {
         opacity: 100%;
@@ -381,8 +353,6 @@ html {
         opacity: 0%;
     }
 }
-
-
 
 
 .pls_scroll_down {
@@ -500,135 +470,73 @@ html {
     }
 }
 
-@media screen and (max-width:768px) {
-    .show_scroll_text_vertical {
-        writing-mode: vertical-lr;
-        position: absolute;
-        top: 80vh;
-        left: 49.3vw;
-        transform: translate(-50%, 0%);
-        font-size: 1.5rem;
+.showcase_toptext {
+    position: absolute;
+    width: 500px;
+    color: aliceblue;
+    font-size: 3vw;
+    left: 42.5%;
+    top: 115vh;
+}
 
-        letter-spacing: 2px;
-        color: aliceblue;
-        animation-name: show_scroll_text;
-        animation-duration: 0.3s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-        opacity: 0%;
-    }
+.showcase_toptext_line {
+    position: absolute;
+    left: 47.2%;
+    top: 123vh;
+    width: 45px;
+    height: 2px;
+    background-color: white;
 
-
-
-    .not_show_scroll_text_vertical {
-        writing-mode: vertical-lr;
-        position: absolute;
-        top: 80vh;
-        left: 49.3vw;
-        transform: translate(-50%, 0%);
-        font-size: 1.5rem;
-        color: aliceblue;
-        animation-name: not_show_scroll_text;
-        animation-duration: 0.2s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-
-    @keyframes going_downward {
-        0% {
-            left: 49.3vw;
-            bottom: 8%;
-            opacity: 100%;
-        }
-
-
-
-        100% {
-            left: 49.3vw;
-            bottom: -20px;
-            opacity: 50%;
-        }
-
-
-    }
-
-    .parser {
-        padding-bottom: 50%;
-    }
-
-    .parser1 {
-        padding-bottom: 45%;
-    }
-
-    /*showcase top text    aroma page text  +  tittle    left長度有問題*/
-    /*dm us to order也有讓水平需要多滑*/
-
-
-    .showcase_toptext {
-        position: absolute;
-        width: 500px;
-        color: aliceblue;
-        font-size: 3vw;
-        left: 42.5%;
-        top: 115vh;
-    }
-
-    .showcase_toptext_line {
-        position: absolute;
-        left: 47.2%;
-        top: 123vh;
-        width: 45px;
-        height: 2px;
-        background-color: white;
-
-    }
-
-
-
-
-    .showcase_pic {
-        position: relative;
-        width: 50vw;
-        height: 40vw;
-        left: 46vw;
-        top: -5vh;
-        margin-top: 1rem;
-        box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
-    }
-
-    .showcase_text {
-        writing-mode: vertical-lr;
-        position: relative;
-        left: 35vw;
-        top: -60vh;
-        color: aliceblue;
-        font-size: 3vw;
-        text-align: center;
-    }
-
-    .showcase_text_line {
-        position: relative;
-        left: 35.8vw;
-        top: -65vh;
-        width: 4vw;
-        height: 1px;
-        background-color: white;
-
-    }
-
-    .showcase_text_line2 {
-        position: relative;
-        left: 35.8vw;
-        top: -52vh;
-        width: 4vw;
-        height: 1px;
-        background-color: white;
-    }
 }
 
 
+.showcase_pic {
+    position: relative;
+    width: 50vw;
+    height: 40vw;
+    left: 46vw;
+    top: -10vh;
+    margin-top: 1rem;
+    box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
+}
 
+.showcase_text {
+    writing-mode: vertical-lr;
+    position: relative;
+    left: 35vw;
+    top: -65vh;
+    color: aliceblue;
+    font-size: 3vw;
+    text-align: center;
+}
 
+.showcase_text_line {
+    position: relative;
+    left: 35.2vw;
+    top: -70vh;
+    width: 4vw;
+    height: 1px;
+    background-color: white;
+
+}
+
+.showcase_text_line2 {
+    position: relative;
+    left: 35.2vw;
+    top: -60vh;
+    width: 4vw;
+    height: 2px;
+    background-color: white;
+}
+
+.parser {
+    margin-bottom: 50%;
+
+}
+
+.parser1 {
+    margin-bottom: 45%;
+}
 
 
 .aroma_the_page_tittle {
@@ -740,8 +648,28 @@ html {
 }
 
 
-
+/* 從showcase頁面到結尾 */
 @media screen and (max-width: 768px) {
+    .showcase_toptext {
+        position: relative;
+        width: 40vw;
+        color: aliceblue;
+        font-size: 4vw;
+        left: 40%;
+        top: 76vh;
+    }
+
+    .showcase_toptext_line {
+        position: relative;
+        left: 45.2%;
+        top: 77vh;
+        width: 45px;
+        height: 2px;
+        background-color: white;
+
+    }
+
+
     .showcase_pic {
         position: relative;
         width: 50vw;
