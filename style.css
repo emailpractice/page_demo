@@ -336,7 +336,7 @@ html {
 
     .messanger_example {
         position: relative;
-        width: 60%;
+        width: 65vw;
         top: -10vh;
         left: 11vw;
     }
@@ -880,7 +880,7 @@ html {
 
     .messanger_example {
         position: relative;
-        width: 50%;
+        width: 55vw;
         top: 90vh;
         left: 11vw;
     }
