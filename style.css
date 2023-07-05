@@ -700,7 +700,7 @@ html {
         border-radius: 3px;
         position: fixed;
         top: 5.2vh;
-        left: 70vw;
+        left: 86vw;
         font-size: 0.75rem;
         display: flex;
         justify-content: center;
@@ -811,7 +811,7 @@ html {
         position: relative;
         left: 25.2vw;
         top: 67vh;
-        width: 4vw;
+        width: 3vw;
         height: 1px;
         background-color: white;
 
@@ -821,8 +821,8 @@ html {
         position: relative;
         left: 25.2vw;
         top: 73vh;
-        width: 4vw;
-        height: 2px;
+        width: 3vw;
+        height: 1px;
         background-color: white;
     }
 
