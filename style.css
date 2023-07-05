@@ -329,7 +329,7 @@ html {
         background-color: #000;
         color: #fff;
         font-size: 3vw;
-        text-indent: 40vw;
+        text-indent: 20vw;
         line-height: 20px;
 
     }
@@ -692,7 +692,7 @@ html {
     @keyframes going_downward {
         0% {
             left: 49.3vw;
-            bottom: 10%;
+            bottom: 6%;
 
         }
 
