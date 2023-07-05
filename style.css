@@ -334,6 +334,13 @@ html {
 
     }
 
+    .messanger_example {
+        position: relative;
+        width: 60%;
+        top: -10vh;
+        left: 11vw;
+    }
+
 }
 
 
@@ -656,6 +663,8 @@ html {
 
 .messanger_example {
     position: relative;
+    width: 50vw;
+    height: auto;
     top: -10vh;
     left: 11vw;
 }
@@ -871,6 +880,7 @@ html {
 
     .messanger_example {
         position: relative;
+        width: 50%;
         top: 90vh;
         left: 11vw;
     }
