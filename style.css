@@ -662,23 +662,46 @@ html {
 475
 475*/
 @media screen and (max-width:474.99px) {
+    .show_logo1 {
+        position: relative;
+        width: 30vw;
+        top: -5vw;
+        left: -1vw;
+        opacity: 0;
+        animation-name: fade_in_logo1;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    .not_show_logo1 {
+        position: relative;
+        width: 30vw;
+        top: -5vw;
+        left: -1vw;
+        animation-name: fade_out_logo1;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
     .fbicon {
-        width: 1.5rem;
+        width: 2.25rem;
         position: fixed;
         top: 5vh;
-        left: 92vw;
+        left: 89vw;
         background-image: url(./Facebook徽標.png);
     }
 
     .anchor_button_order_page {
-        width: 3rem;
-        height: 2 rem;
+        width: 4.5rem;
+        height: 3 rem;
         background-color: brown;
         border-radius: 3px;
         position: fixed;
-        top: 4.5vh;
-        left: 75vw;
-        font-size: 0.5rem;
+        top: 5.2vh;
+        left: 70vw;
+        font-size: 0.75rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -692,8 +715,6 @@ html {
             bottom: -2%;
 
         }
-
-
 
         100% {
             left: 49.3vw;
@@ -718,10 +739,10 @@ html {
     .show_scroll_text_vertical {
         writing-mode: vertical-lr;
         position: absolute;
-        top: 85vh;
+        top: 80vh;
         left: 49.3vw;
         transform: translate(-50%, 0%);
-        font-size: 1.5rem;
+        font-size: 0.75rem;
 
         letter-spacing: 2px;
         color: aliceblue;
@@ -737,10 +758,10 @@ html {
     .not_show_scroll_text_vertical {
         writing-mode: vertical-lr;
         position: absolute;
-        top: 85vh;
+        top: 80vh;
         left: 49.3vw;
         transform: translate(-50%, 0%);
-        font-size: 1.5rem;
+        font-size: 0.75rem;
         color: aliceblue;
         animation-name: not_show_scroll_text;
         animation-duration: 0.2s;
@@ -764,9 +785,7 @@ html {
         width: 6vw;
         height: 2px;
         background-color: white;
-
     }
-
 
     .showcase_pic {
         position: relative;
@@ -808,12 +827,11 @@ html {
     }
 
     .aroma_the_page_tittle {
-
         font-size: 6vw;
         position: relative;
         width: 500px;
         top: 80vh;
-        left: 40.5vw;
+        left: 35.5vw;
         color: aliceblue;
         padding-bottom: 15px;
     }
@@ -824,7 +842,7 @@ html {
         width: 500px;
         position: relative;
         top: 80vh;
-        left: 37.7vw;
+        left: 33.7vw;
         color: aliceblue;
 
     }
@@ -835,7 +853,7 @@ html {
         width: 500px;
         position: relative;
         top: 80vh;
-        left: 34vw;
+        left: 28vw;
         color: aliceblue;
 
     }
@@ -846,7 +864,7 @@ html {
         width: 500px;
         position: relative;
         top: 80vh;
-        left: 31vw;
+        left: 23vw;
         color: aliceblue;
 
     }
@@ -854,7 +872,7 @@ html {
     .whole_set_img {
 
         /* Set up proportionate scaling */
-        width: 70vw;
+        width: 85vw;
         height: auto;
         left: 16vw;
         top: 100vh;
@@ -882,7 +900,7 @@ html {
 
     .messanger_example {
         position: relative;
-        width: 250vw;
+        width: 300vw;
         top: 125vh;
         left: 2vw;
     }
@@ -906,14 +924,9 @@ html {
         background-color: #000;
         color: #fff;
         font-size: 2vw;
-        text-indent: 25vw;
+        text-indent: 35vw;
         line-height: 20px;
-
     }
-
-
-
-
 }
 
 /* 475-767
@@ -1133,6 +1146,20 @@ html {
 
     }
 }
+
+/*768-1023
+768-1023
+768-1023
+768-1023
+768-1023
+768-1023
+768-1023
+768-1023
+768-1023
+768-1023
+768-1023
+768-1023*/
+@media (min-width: 768px) and (max-width: 1023.99px) {}
 
 /*11111111111111
 11111111111111
