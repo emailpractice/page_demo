@@ -1,0 +1,376 @@
+/*如果顯示上看起來有問題，但是圖片的數據又正常，可以試著點兩下(重開)那個"裝置模擬"的按鈕(變成手機尺寸)，或者ctrl+/- 調整放大比率*/
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 40em) {
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .box {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        max-width: 100%;
+        /*沒有加這句會讓100vw有一個小小的橫向卷軸的空間，因為要讓你看到在垂直的卷軸下面的網頁內容。
+        so the horizontal scroll will be added to allow you to see under the vertical scroll"*/
+
+    }
+
+
+    .bground_not_blur {
+
+        width: 100vw;
+        height: auto;
+        max-width: 100%;
+        /*沒有加這句會讓100vw有一個小小的橫向卷軸的空間，因為要讓你看到在垂直的卷軸下面的網頁內容。
+        so the horizontal scroll will be added to allow you to see under the vertical scroll"*/
+
+    }
+
+
+
+    .show_start_your_order_text {
+        position: absolute;
+        top: 33.5%;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        color: rgb(252, 252, 252);
+        font-size: 3rem;
+        animation-name: fade_in_start_your_order_text;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        opacity: 0%;
+
+    }
+
+
+
+    @keyframes fade_in_start_your_order_text {
+        from {
+            opacity: 0%;
+
+        }
+
+        to {
+            opacity: 100%;
+        }
+    }
+
+    .not_show_start_your_order_text {
+        position: absolute;
+        top: 33.5%;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        color: rgb(252, 252, 252);
+        font-size: 3rem;
+        animation-name: fade_out_start_your_order_text;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        opacity: 0%;
+
+    }
+
+
+
+
+    @keyframes fade_out_start_your_order_text {
+        from {
+            opacity: 100%;
+
+        }
+
+        to {
+            opacity: 0%;
+        }
+    }
+
+}
+
+.show_logo1 {
+    position: relative;
+    top: -78em;
+    left: -40px;
+    width: 30%;
+    animation-name: fade_in_logo1;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes fade_in_logo1 {
+    from {
+        opacity: 0%;
+
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.not_show_logo1 {
+    position: relative;
+    top: -78em;
+    left: -40px;
+    width: 30%;
+    animation-name: fade_out_logo1;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade_out_logo1 {
+    from {
+        opacity: 100%;
+
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+.fbicon {
+    width: 2.5em;
+    position: fixed;
+    top: 2.3%;
+    left: 93vw;
+    background-image: url(./Facebook徽標.png);
+}
+
+
+.anchor_button_order_page {
+    width: 90px;
+    height: 40px;
+    background-color: brown;
+    border-radius: 3px;
+    position: fixed;
+    top: 3.3em;
+    left: 85vw;
+    transform: translate(-50%, -50%);
+
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    z-index: 1;
+
+}
+
+.anchor_button_order_page:hover {
+    color: #fff;
+    background-color: #000
+}
+
+
+
+.show_scroll_text_vertical {
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 1.5rem;
+
+    letter-spacing: 2px;
+    color: aliceblue;
+    animation-name: show_scroll_text;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+
+@keyframes show_scroll_text {
+    0% {
+
+        opacity: 0%;
+    }
+
+
+
+    100% {
+
+        opacity: 100%;
+    }
+}
+
+.not_show_scroll_text_vertical {
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 1.5rem;
+    color: aliceblue;
+    animation-name: not_show_scroll_text;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes not_show_scroll_text {
+    0% {
+
+        opacity: 100%;
+    }
+
+
+
+    100% {
+
+        opacity: 0%;
+    }
+}
+
+.pls_scroll_down {
+    position: absolute;
+    width: 1.5px;
+    height: 50px;
+    background-color: rgb(170, 150, 38);
+    animation-name: going_downward;
+    animation-duration: 1.3s;
+    animation-delay: 90ms;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes going_downward {
+    0% {
+
+        left: 49.8%;
+        bottom: 4%;
+        opacity: 0%;
+    }
+
+
+
+    100% {
+        left: 49.8%;
+        bottom: -60px;
+        opacity: 100%;
+    }
+}
+
+.pls_scroll_down_not_showed {
+    position: absolute;
+    width: 1.5px;
+    height: 50px;
+    background-color: rgb(170, 150, 38);
+    animation-name: scroll_down_not_showed;
+    animation-duration: 1.3s;
+    animation-delay: 90ms;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes scroll_down_not_showed {
+    0% {
+
+        opacity: 100%;
+    }
+
+
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+.showcase_toptext {
+    position: relative;
+    top: 31em;
+    left: 40%;
+    width: 500px;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+.showcase_toptext_line {
+    position: absolute;
+    left: 46.5%;
+    top: 84em;
+    width: 45px;
+    height: 2px;
+    background-color: white;
+}
+
+.showcase_toptext {
+    position: absolute;
+    width: 500px;
+    color: aliceblue;
+    font-size: 3rem;
+    left: 43.5%;
+    top: 781px;
+}
+
+
+
+.showcase_pic {
+    position: relative;
+    top: 73em;
+    width: 15em;
+    height: 10em;
+    left: 50.4%;
+
+    box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
+}
+
+.showcase_text {
+    writing-mode: vertical-lr;
+    position: relative;
+    left: -6%;
+    top: 65px;
+    color: aliceblue;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.showcase_text_line {
+    position: relative;
+    left: -3.1%;
+    top: 270px;
+    width: 40px;
+    height: 1px;
+    background-color: white;
+
+}
+
+.showcase_text_line2 {
+    position: relative;
+    left: -8.6%;
+    top: 458px;
+    width: 40px;
+    height: 1px;
+    background-color: white;
+}
+
+.aroma_the_page_tittle {}
+
+.aroma_the_page_text {}
+
+.aroma_the_page_text2 {}
+
+.aroma_the_page_text3 {}
+
+.whole_set_img {
+    width: 1px;
+}
+
+.parser2 {}
+
+.messanger_example {}
+
+.dm_us_to_order {}
+
+.price_text {}
+
+.foot {}
