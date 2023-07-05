@@ -321,6 +321,19 @@ html {
         z-index: 20;
     }
 
+    .foot {
+        position: relative;
+        top: 0vh;
+        width: 100vw;
+        height: 40px;
+        background-color: #000;
+        color: #fff;
+        font-size: 3vw;
+        text-indent: 40vw;
+        line-height: 20px;
+
+    }
+
 }
 
 
@@ -826,8 +839,6 @@ html {
         color: aliceblue;
 
     }
-
-
 
     .whole_set_img {
 
