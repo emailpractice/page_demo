@@ -539,7 +539,7 @@ html {
     position: relative;
     width: 50vw;
     height: 40vw;
-    left: 46vw;
+    left: 36vw;
     top: -10vh;
     margin-top: 1rem;
     box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
@@ -548,7 +548,7 @@ html {
 .showcase_text {
     writing-mode: vertical-lr;
     position: relative;
-    left: 35vw;
+    left: 25vw;
     top: -65vh;
     color: aliceblue;
     font-size: 3vw;
@@ -557,7 +557,7 @@ html {
 
 .showcase_text_line {
     position: relative;
-    left: 35.2vw;
+    left: 25.2vw;
     top: -70vh;
     width: 4vw;
     height: 1px;
@@ -567,7 +567,7 @@ html {
 
 .showcase_text_line2 {
     position: relative;
-    left: 35.2vw;
+    left: 25.2vw;
     top: -60vh;
     width: 4vw;
     height: 2px;
@@ -770,7 +770,7 @@ html {
         position: relative;
         width: 50vw;
         height: 40vw;
-        left: 46vw;
+        left: 36vw;
         top: 80vh;
         margin-top: 1rem;
         box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
@@ -779,7 +779,7 @@ html {
     .showcase_text {
         writing-mode: vertical-lr;
         position: relative;
-        left: 35vw;
+        left: 25vw;
         top: 66vh;
         color: aliceblue;
         font-size: 3vw;
@@ -788,7 +788,7 @@ html {
 
     .showcase_text_line {
         position: relative;
-        left: 35.1vw;
+        left: 25.1vw;
         top: 65vh;
         width: 4vw;
         height: 1px;
@@ -798,7 +798,7 @@ html {
 
     .showcase_text_line2 {
         position: relative;
-        left: 35.1vw;
+        left: 25.1vw;
         top: 68vh;
         width: 4vw;
         height: 1px;
@@ -807,44 +807,44 @@ html {
 
     .aroma_the_page_tittle {
 
-        font-size: 2.5vw;
+        font-size: 6vw;
         position: relative;
         width: 500px;
         top: 65vh;
-        left: 44.5vw;
+        left: 34.5vw;
         color: aliceblue;
         padding-bottom: 15px;
     }
 
     .aroma_the_page_text {
 
-        font-size: 2vw;
+        font-size: 4vw;
         width: 500px;
         position: relative;
         top: 65vh;
-        left: 42.7vw;
+        left: 32.7vw;
         color: aliceblue;
 
     }
 
     .aroma_the_page_text2 {
 
-        font-size: 2vw;
+        font-size: 4vw;
         width: 500px;
         position: relative;
         top: 65vh;
-        left: 40vw;
+        left: 28vw;
         color: aliceblue;
 
     }
 
     .aroma_the_page_text3 {
 
-        font-size: 2vw;
+        font-size: 4vw;
         width: 500px;
         position: relative;
         top: 65vh;
-        left: 38vw;
+        left: 23vw;
         color: aliceblue;
 
     }
