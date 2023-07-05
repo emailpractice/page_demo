@@ -4,11 +4,19 @@
     scroll-behavior: smooth;
     max-width: 100%;
 
+
+
     /*讓跳轉anchor的時候是滑下去的 而不是直接跳轉*/
 }
 
-.container {}
+body,
+html {
+    overflow-x: hidden;
+}
 
+/*一般正常用maxwidth100%就可以處理overflow。上面那段是針對手機板的x-overflow*/
+
+.container {}
 
 
 
@@ -492,78 +500,130 @@
     }
 }
 
-.parser {
-    padding-bottom: 50%;
-}
+@media screen and (max-width:768px) {
+    .show_scroll_text_vertical {
+        writing-mode: vertical-lr;
+        position: absolute;
+        top: 80vh;
+        left: 49.3vw;
+        transform: translate(-50%, 0%);
+        font-size: 1.5rem;
 
-.parser1 {
-    padding-bottom: 45%;
-}
-
-/*showcase top text    aroma page text  +  tittle    left長度有問題*/
-/*dm us to order也有讓水平需要多滑*/
-
-
-.showcase_toptext {
-    position: absolute;
-    width: 500px;
-    color: aliceblue;
-    font-size: 3vw;
-    left: 42.5%;
-    top: 115vh;
-}
-
-.showcase_toptext_line {
-    position: absolute;
-    left: 47.2%;
-    top: 123vh;
-    width: 45px;
-    height: 2px;
-    background-color: white;
-
-}
+        letter-spacing: 2px;
+        color: aliceblue;
+        animation-name: show_scroll_text;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        opacity: 0%;
+    }
 
 
 
+    .not_show_scroll_text_vertical {
+        writing-mode: vertical-lr;
+        position: absolute;
+        top: 80vh;
+        left: 49.3vw;
+        transform: translate(-50%, 0%);
+        font-size: 1.5rem;
+        color: aliceblue;
+        animation-name: not_show_scroll_text;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
 
-.showcase_pic {
-    position: relative;
-    width: 50vw;
-    height: 40vw;
-    left: 46vw;
-    top: -5vh;
-    margin-top: 1rem;
-    box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
-}
+    @keyframes going_downward {
+        0% {
+            left: 49.3vw;
+            bottom: 8%;
+            opacity: 100%;
+        }
 
-.showcase_text {
-    writing-mode: vertical-lr;
-    position: relative;
-    left: 35vw;
-    top: -60vh;
-    color: aliceblue;
-    font-size: 3vw;
-    text-align: center;
-}
 
-.showcase_text_line {
-    position: relative;
-    left: 35.8vw;
-    top: -65vh;
-    width: 4vw;
-    height: 1px;
-    background-color: white;
 
-}
+        100% {
+            left: 49.3vw;
+            bottom: -20px;
+            opacity: 50%;
+        }
 
-.showcase_text_line2 {
-    position: relative;
-    left: 35.8vw;
-    top: -52vh;
-    width: 4vw;
-    height: 1px;
-    background-color: white;
-}
+
+    }
+
+    .parser {
+        padding-bottom: 50%;
+    }
+
+    .parser1 {
+        padding-bottom: 45%;
+    }
+
+    /*showcase top text    aroma page text  +  tittle    left長度有問題*/
+    /*dm us to order也有讓水平需要多滑*/
+
+
+    .showcase_toptext {
+        position: absolute;
+        width: 500px;
+        color: aliceblue;
+        font-size: 3vw;
+        left: 42.5%;
+        top: 115vh;
+    }
+
+    .showcase_toptext_line {
+        position: absolute;
+        left: 47.2%;
+        top: 123vh;
+        width: 45px;
+        height: 2px;
+        background-color: white;
+
+    }
+
+
+
+
+    .showcase_pic {
+        position: relative;
+        width: 50vw;
+        height: 40vw;
+        left: 46vw;
+        top: -5vh;
+        margin-top: 1rem;
+        box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
+    }
+
+    .showcase_text {
+        writing-mode: vertical-lr;
+        position: relative;
+        left: 35vw;
+        top: -60vh;
+        color: aliceblue;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .showcase_text_line {
+        position: relative;
+        left: 35.8vw;
+        top: -65vh;
+        width: 4vw;
+        height: 1px;
+        background-color: white;
+
+    }
+
+    .showcase_text_line2 {
+        position: relative;
+        left: 35.8vw;
+        top: -52vh;
+        width: 4vw;
+        height: 1px;
+        background-color: white;
+    }
 }
 
 
@@ -673,6 +733,7 @@
     height: 40px;
     background-color: #000;
     color: #fff;
+    font-size: 1vw;
     text-indent: 70vw;
     line-height: 20px;
 
