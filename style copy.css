@@ -298,7 +298,7 @@ html {
 
 @media screen and (max-width:475px) {
     .fbicon {
-        width: 1rem;
+        width: 1.5rem;
         position: fixed;
         top: 5vh;
         left: 94vw;
@@ -313,7 +313,7 @@ html {
         position: fixed;
         top: 4.5vh;
         left: 80vw;
-        font-size: 0.33rem;
+        font-size: 0.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -395,16 +395,16 @@ html {
 @keyframes going_downward {
     0% {
         left: 49.3vw;
-        bottom: 4%;
-        opacity: 0%;
+        bottom: -2%;
+
     }
 
 
 
     100% {
         left: 49.3vw;
-        bottom: -80px;
-        opacity: 100%;
+        bottom: -100px;
+
     }
 }
 
@@ -673,8 +673,58 @@ html {
 }
 
 
-/* 從showcase頁面到結尾 */
+/* 從scroll頁面到結尾 */
 @media screen and (max-width: 768px) {
+
+    @keyframes going_downward {
+        0% {
+            left: 49.3vw;
+            bottom: 20%;
+
+        }
+
+        100% {
+            left: 49.3vw;
+            bottom: -80px;
+
+        }
+    }
+
+
+
+
+    .show_scroll_text_vertical {
+        writing-mode: vertical-lr;
+        position: absolute;
+        top: 75vh;
+        left: 49.3vw;
+        transform: translate(-50%, 0%);
+        font-size: 1rem;
+
+        letter-spacing: 2px;
+        color: aliceblue;
+        animation-name: show_scroll_text;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        opacity: 0%;
+    }
+
+
+    .not_show_scroll_text_vertical {
+        writing-mode: vertical-lr;
+        position: absolute;
+        top: 75vh;
+        left: 49.3vw;
+        transform: translate(-50%, 0%);
+        font-size: 1rem;
+        color: aliceblue;
+        animation-name: not_show_scroll_text;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
     .showcase_toptext {
         position: relative;
         width: 40vw;
@@ -693,7 +743,6 @@ html {
         background-color: white;
 
     }
-
 
     .showcase_pic {
         position: relative;
