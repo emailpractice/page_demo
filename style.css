@@ -336,7 +336,7 @@ html {
 
     .messanger_example {
         position: relative;
-        width: 100vw;
+        width: 200vw;
         top: -10vh;
         left: 11vw;
     }
@@ -701,7 +701,7 @@ html {
     @keyframes going_downward {
         0% {
             left: 49.3vw;
-            bottom: 2%;
+            bottom: 0%;
 
         }
 
