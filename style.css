@@ -893,7 +893,7 @@ html {
         /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
         font-size: 4vw;
         position: relative;
-        top: 75vh;
+        top: 70vh;
         left: 27%;
         color: aliceblue;
     }
