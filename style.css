@@ -312,7 +312,7 @@ html {
         border-radius: 3px;
         position: fixed;
         top: 4.5vh;
-        left: 78vw;
+        left: 75vw;
         font-size: 0.5rem;
         display: flex;
         justify-content: center;
@@ -411,8 +411,6 @@ html {
         color: #fff;
 
     }
-
-
 
     .foot {
         position: relative;
