@@ -909,7 +909,7 @@ html {
         position: relative;
         top: 120vh;
         width: 100vw;
-        height: 50vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         gap: 0.5px;
@@ -924,6 +924,8 @@ html {
 
 
     .dm_us_to_order {
+        position: relative;
+        top: -20px;
         width: 100vw;
         /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
         font-size: 4vw;
