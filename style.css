@@ -837,7 +837,7 @@ html {
         color: aliceblue;
         font-size: 3vw;
 
-        height: 100px;
+        height: 850px;
         border-top: 1px solid #fff;
         border-bottom: 1px solid #fff;
     }
@@ -949,7 +949,7 @@ html {
 
     .foot {
         position: relative;
-        top: 140vh;
+        top: 130vh;
         width: 100vw;
         height: 40px;
         background-color: #000;
