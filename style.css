@@ -912,13 +912,11 @@ html {
         display: flex;
         flex-direction: column;
         gap: 0.5px;
-
-
     }
 
     .flex_container>div {
         position: relative;
-        left: 35vw;
+        left: 30vw;
     }
 
     .flex_container>img {}
