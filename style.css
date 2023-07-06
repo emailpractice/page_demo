@@ -262,11 +262,10 @@ html {
     z-index: 1;
 }
 
-.anchor_button_order_page:hover {
-    color: #fff;
-    background-color: #000
-}
+.anchor_button_order_page:active {
 
+    background-color: rgb(67, 2, 2);
+}
 
 
 @media screen and (max-width:1280px) {
@@ -994,6 +993,7 @@ html {
         color: aliceblue;
         z-index: 20;
     }
+
 
     @keyframes going_downward {
         0% {
