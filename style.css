@@ -471,19 +471,19 @@ html {
 }
 
 .showcase_toptext {
-    position: absolute;
+    position: relative;
     width: 500px;
     color: aliceblue;
-    font-size: 3vw;
-    left: 42.5%;
-    top: 115vh;
+    font-size: 4vw;
+    left: 44.5%;
+    top: -15vh;
 }
 
 .showcase_toptext_line {
-    position: absolute;
-    left: 47.2%;
-    top: 123vh;
-    width: 45px;
+    position: relative;
+    left: 49.5%;
+    top: -13vh;
+    width: 5vw;
     height: 2px;
     background-color: white;
 
@@ -492,8 +492,8 @@ html {
 
 .showcase_pic {
     position: relative;
-    width: 50vw;
-    height: 40vw;
+    width: 40vw;
+    height: 32vw;
     left: 36vw;
     top: -10vh;
     margin-top: 1rem;
@@ -503,31 +503,16 @@ html {
 .showcase_text {
     writing-mode: vertical-lr;
     position: relative;
+    height: 20vw;
     left: 25vw;
-    top: -65vh;
+    top: -32vw;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     color: aliceblue;
     font-size: 3vw;
     text-align: center;
 }
 
-.showcase_text_line {
-    position: relative;
-    left: 25.2vw;
-    top: -70vh;
-    width: 4vw;
-    height: 1px;
-    background-color: white;
-
-}
-
-.showcase_text_line2 {
-    position: relative;
-    left: 25.2vw;
-    top: -60vh;
-    width: 4vw;
-    height: 2px;
-    background-color: white;
-}
 
 .parser {
     margin-bottom: 50%;
@@ -541,44 +526,44 @@ html {
 
 .aroma_the_page_tittle {
 
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     position: relative;
 
-    top: -68vh;
-    left: 44.5vw;
+    top: -40vw;
+    left: 42.5vw;
     color: aliceblue;
     padding-bottom: 15px;
 }
 
 .aroma_the_page_text {
 
-    font-size: 2vw;
+    font-size: 2.5vw;
 
     position: relative;
-    top: -68vh;
-    left: 42.7vw;
+    top: -40vw;
+    left: 40.7vw;
     color: aliceblue;
 
 }
 
 .aroma_the_page_text2 {
 
-    font-size: 2vw;
+    font-size: 2.5vw;
 
     position: relative;
-    top: -68vh;
-    left: 40vw;
+    top: -40vw;
+    left: 38vw;
     color: aliceblue;
 
 }
 
 .aroma_the_page_text3 {
 
-    font-size: 2vw;
+    font-size: 2.5vw;
 
     position: relative;
-    top: -68vh;
-    left: 38vw;
+    top: -40vw;
+    left: 35vw;
     color: aliceblue;
 
 }
@@ -601,7 +586,7 @@ html {
 
 #the_order_page {
     position: absolute;
-    top: 830vh;
+    top: 820vh;
 }
 
 
@@ -610,10 +595,12 @@ html {
     top: 80px;
     width: 100vw;
     height: 40vh;
-    border: 10px red solid;
+
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.5px;
+
+
 }
 
 .flex_container>div {
@@ -638,6 +625,8 @@ html {
 }
 
 .price_text {
+    position: relative;
+    top: -50px;
     width: 30vw;
     font-size: 1.5vw;
     color: #fff;
@@ -810,31 +799,16 @@ html {
     .showcase_text {
         writing-mode: vertical-lr;
         position: relative;
-        left: 25vw;
-        top: 70vh;
+        left: 23vw;
+        top: 160vw;
         color: aliceblue;
         font-size: 3vw;
-        text-align: center;
+
+        height: 100px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
     }
 
-    .showcase_text_line {
-        position: relative;
-        left: 25.7vw;
-        top: 69vh;
-        width: 3vw;
-        height: 1px;
-        background-color: white;
-
-    }
-
-    .showcase_text_line2 {
-        position: relative;
-        left: 25.7vw;
-        top: 71vh;
-        width: 3vw;
-        height: 1px;
-        background-color: white;
-    }
 
     .aroma_the_page_tittle {
         font-size: 6vw;
@@ -898,30 +872,44 @@ html {
         top: 1360vh;
     }
 
-    .dm_us_to_order {
-        width: 50vw;
-        /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
-        font-size: 4vw;
+    .flex_container {
         position: relative;
-        top: 72vh;
-        left: 27%;
+        top: 120vh;
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5px;
+
+
+    }
+
+    .flex_container>div {
+        position: relative;
+        left: 35vw;
+    }
+
+    .flex_container>img {}
+
+
+    .dm_us_to_order {
+        width: 100vw;
+        /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
+        font-size: 2vw;
         color: aliceblue;
     }
 
     .messanger_example {
-        position: relative;
-        width: 300vw;
-        top: 125vh;
-        left: 2vw;
+        width: 750px;
+        height: auto;
+        flex-shrink: 1;
     }
-
 
     .price_text {
         position: relative;
-        width: 50vw;
-        top: 120vh;
-        left: 32%;
-        font-size: 3vw;
+        top: -20px;
+        width: 60vw;
+        font-size: 1.5vw;
         color: #fff;
 
     }
@@ -1052,30 +1040,16 @@ html {
         writing-mode: vertical-lr;
         position: relative;
         left: 25vw;
-        top: 66vh;
+        top: 62vh;
         color: aliceblue;
         font-size: 3vw;
+        height: 20vw;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
         text-align: center;
     }
 
-    .showcase_text_line {
-        position: relative;
-        left: 25.1vw;
-        top: 65vh;
-        width: 4vw;
-        height: 1px;
-        background-color: white;
 
-    }
-
-    .showcase_text_line2 {
-        position: relative;
-        left: 25.1vw;
-        top: 68vh;
-        width: 4vw;
-        height: 1px;
-        background-color: white;
-    }
 
     .aroma_the_page_tittle {
 
@@ -1124,9 +1098,9 @@ html {
     .whole_set_img {
 
         /* Set up proportionate scaling */
-        width: 55vw;
+        width: 70vw;
         height: auto;
-        left: 25vw;
+        left: 18vw;
         top: 70vh;
         /* Set up positioning */
         position: relative;
@@ -1140,29 +1114,46 @@ html {
         top: 600vh;
     }
 
+
+    .flex_container {
+        position: relative;
+        top: 82vh;
+        width: 100vw;
+        height: 40vh;
+
+        display: flex;
+        flex-direction: column;
+        gap: 0.5px;
+
+
+    }
+
+    .flex_container>div {
+        position: relative;
+        left: 200px;
+    }
+
+    .flex_container>img {}
+
+
     .dm_us_to_order {
         width: 50vw;
         /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
         font-size: 3vw;
-        position: relative;
-        top: 52vh;
-        left: 26%;
         color: aliceblue;
     }
 
     .messanger_example {
-        position: relative;
-        width: 205vw;
-        top: 90vh;
-        left: 1vw;
+        width: 750px;
+        height: auto;
+        flex-shrink: 1;
     }
 
     .price_text {
         position: relative;
-        width: 50vw;
-        top: 87vh;
-        left: 28%;
-        font-size: 3vw;
+        top: -50px;
+        width: 30vw;
+        font-size: 2vw;
         color: #fff;
 
     }
