@@ -598,14 +598,13 @@ html {
 
     display: flex;
     flex-direction: column;
-    gap: 0.5px;
 
 
 }
 
 .flex_container>div {
     position: relative;
-    left: 200px;
+    left: 230px;
 }
 
 .flex_container>img {}
@@ -619,6 +618,8 @@ html {
 }
 
 .messanger_example {
+    position: relative;
+    top: -30px;
     width: 750px;
     height: auto;
     flex-shrink: 1;
@@ -626,7 +627,7 @@ html {
 
 .price_text {
     position: relative;
-    top: -50px;
+    top: -115px;
     width: 30vw;
     font-size: 1.5vw;
     color: #fff;
