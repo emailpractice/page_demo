@@ -665,8 +665,8 @@ html {
     .show_logo1 {
         position: relative;
         width: 30vw;
-        top: -4.5vw;
-        left: -1vw;
+        top: -6.5vw;
+        left: -3vw;
         opacity: 0;
         animation-name: fade_in_logo1;
         animation-duration: 0.3s;
@@ -677,8 +677,8 @@ html {
     .not_show_logo1 {
         position: relative;
         width: 30vw;
-        top: -4.5vw;
-        left: -1vw;
+        top: -6.5vw;
+        left: -3vw;
         animation-name: fade_out_logo1;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
@@ -688,8 +688,8 @@ html {
     .fbicon {
         width: 1.6rem;
         position: fixed;
-        top: 5.5vh;
-        left: 89vw;
+        top: 4.5vh;
+        left: 93vw;
         background-image: url(./Facebook徽標.png);
     }
 
@@ -699,8 +699,8 @@ html {
         background-color: brown;
         border-radius: 3px;
         position: fixed;
-        top: 5.2vh;
-        left: 86vw;
+        top: 4.2vh;
+        left: 76vw;
         font-size: 0.75rem;
         display: flex;
         justify-content: center;
@@ -718,14 +718,14 @@ html {
 
         100% {
             left: 49.3vw;
-            bottom: -100px;
+            bottom: -40px;
 
         }
     }
 
     .pls_scroll_down_not_showed {
         position: absolute;
-        width: 1.5px;
+        width: 1.2px;
         height: 60px;
         background-color: rgb(170, 150, 38);
         animation-name: scroll_down_not_showed;
@@ -762,6 +762,8 @@ html {
         left: 49.3vw;
         transform: translate(-50%, 0%);
         font-size: 0.75rem;
+
+        letter-spacing: 2px;
         color: aliceblue;
         animation-name: not_show_scroll_text;
         animation-duration: 0.2s;
@@ -940,6 +942,30 @@ html {
 475-767
 475-767*/
 @media (min-width: 475px) and (max-width: 767.99px) {
+    .fbicon {
+        width: 1.6rem;
+        position: fixed;
+        top: 4.5vh;
+        left: 93vw;
+        background-image: url(./Facebook徽標.png);
+    }
+
+    .anchor_button_order_page {
+        width: 4.5rem;
+        height: 3 rem;
+        background-color: brown;
+        border-radius: 3px;
+        position: fixed;
+        top: 4.2vh;
+        left: 76vw;
+        font-size: 0.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        z-index: 20;
+    }
+
     @keyframes going_downward {
         0% {
             left: 49.3vw;
@@ -948,7 +974,7 @@ html {
 
         100% {
             left: 49.3vw;
-            bottom: -80px;
+            bottom: -60px;
 
         }
     }
