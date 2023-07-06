@@ -811,8 +811,8 @@ html {
 
     .showcase_text_line {
         position: relative;
-        left: 25.2vw;
-        top: 67vh;
+        left: 25.7vw;
+        top: 69vh;
         width: 3vw;
         height: 1px;
         background-color: white;
@@ -821,8 +821,8 @@ html {
 
     .showcase_text_line2 {
         position: relative;
-        left: 25.2vw;
-        top: 73vh;
+        left: 25.7vw;
+        top: 71vh;
         width: 3vw;
         height: 1px;
         background-color: white;
@@ -844,7 +844,7 @@ html {
         width: 500px;
         position: relative;
         top: 80vh;
-        left: 33.7vw;
+        left: 34.7vw;
         color: aliceblue;
 
     }
@@ -855,7 +855,7 @@ html {
         width: 500px;
         position: relative;
         top: 80vh;
-        left: 28vw;
+        left: 29vw;
         color: aliceblue;
 
     }
@@ -866,7 +866,7 @@ html {
         width: 500px;
         position: relative;
         top: 80vh;
-        left: 23vw;
+        left: 24w;
         color: aliceblue;
 
     }
