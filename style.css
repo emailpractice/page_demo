@@ -935,6 +935,7 @@ html {
     .messanger_example {
         flex-grow: 1;
         object-fit: cover;
+        /*width 或height好像完全沒用。只能用grow來控制大小。 但加上object fit之後，grow的數字再調整也沒用了。可能是因為1已經很大了*/
     }
 
     .price_text {
@@ -1169,6 +1170,8 @@ html {
 
 
     .dm_us_to_order {
+        position: relative;
+        top: -10px;
         width: 50vw;
         /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
         font-size: 3vw;
