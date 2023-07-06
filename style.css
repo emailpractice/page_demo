@@ -357,7 +357,7 @@ html {
 
 .pls_scroll_down {
     position: absolute;
-    width: 1.5px;
+    width: 1.8px;
     height: 60px;
     background-color: rgb(170, 150, 38);
     animation-name: going_downward;
@@ -370,7 +370,7 @@ html {
 @keyframes going_downward {
     0% {
         left: 49.3vw;
-        bottom: -2%;
+        bottom: -2.2%;
 
     }
 
@@ -378,7 +378,7 @@ html {
 
     100% {
         left: 49.3vw;
-        bottom: -100px;
+        bottom: -120px;
 
     }
 }
@@ -747,7 +747,7 @@ html {
 
         100% {
             left: 49.3vw;
-            bottom: -60px;
+            bottom: -80px;
 
         }
     }
@@ -832,7 +832,7 @@ html {
         writing-mode: vertical-lr;
         position: relative;
         left: 23vw;
-        top: 153vw;
+        top: 147vw;
         color: aliceblue;
         font-size: 3vw;
 
