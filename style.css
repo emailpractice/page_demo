@@ -909,7 +909,7 @@ html {
         position: relative;
         top: 120vh;
         width: 100vw;
-        height: 40vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         gap: 0.5px;
