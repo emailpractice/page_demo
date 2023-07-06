@@ -909,7 +909,7 @@ html {
         position: relative;
         top: 120vh;
         width: 100vw;
-        height: 70vh;
+        height: 130vh;
         display: flex;
         flex-direction: column;
         gap: 0.5px;
@@ -933,7 +933,7 @@ html {
     }
 
     .messanger_example {
-        width: 900px;
+        width: 1300px;
         height: auto;
         flex-shrink: 1;
     }
@@ -1076,7 +1076,7 @@ html {
         top: 62vh;
         color: aliceblue;
         font-size: 3vw;
-        height: 20vw;
+        height: 16vw;
         border-top: 1px solid white;
         border-bottom: 1px solid white;
         text-align: center;
