@@ -909,7 +909,7 @@ html {
         position: relative;
         top: 120vh;
         width: 100vw;
-        height: 130vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         gap: 0.5px;
@@ -933,9 +933,8 @@ html {
     }
 
     .messanger_example {
-        width: 1300px;
-        height: auto;
-        flex-shrink: 1;
+        flex-grow: 1;
+        object-fit: cover;
     }
 
     .price_text {
