@@ -74,7 +74,7 @@ function show_start_your_order_text() {
 
 }
 
-var scrolled = window.scrollY
+
 var a = false
 
 window.addEventListener('scroll', () => {
@@ -86,14 +86,7 @@ window.addEventListener('scroll', () => {
     not_show_start_your_order_text()
     a = false
   }
-
-
-})
-
-
-
-window.addEventListener('scroll', () => {/*這邊是變清晰的函數*/
-  if (window.scrollY == 0) {
+  if (window.scrollY == 0) { /*變清晰的函數*/
 
     remove_black_overlay()
     show_scroll_down()
@@ -103,6 +96,8 @@ window.addEventListener('scroll', () => {/*這邊是變清晰的函數*/
     a = true
   }
 })
+
+
 
 
 
