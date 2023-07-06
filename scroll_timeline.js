@@ -75,24 +75,29 @@ function show_start_your_order_text() {
 }
 
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY != 0) {
+var a = true
 
-    add_black_overlay()
+window.addEventListener('scroll', () => {
+  if (window.scrollY != 0 && a == true) {
+    add_black_overlay()  /*變模糊的函數*/
     not_show_scroll_down()
     not_show_scroll_text()
     not_show_logo1()
     not_show_start_your_order_text()
-
+    a = false
   }
-  if (window.scrollY == 0) {
-    var scrolled = window.scrollY
+  if (window.scrollY == 0) { /*變清晰的函數*/
 
     remove_black_overlay()
     show_scroll_down()
     show_scroll_down_text()
     show_logo1()
     show_start_your_order_text()
+    a = true
   }
-});
+})
+
+
+
+
 

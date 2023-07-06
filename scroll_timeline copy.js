@@ -64,7 +64,7 @@ function not_show_start_your_order_text() {
 
   let elem_start_your_order_text = document.querySelector('#ele_start_your_order_text')
   elem_start_your_order_text.className = 'not_show_start_your_order_text'
-  alert("123")
+
 
 }
 function show_start_your_order_text() {
@@ -75,7 +75,7 @@ function show_start_your_order_text() {
 }
 
 
-var a = false
+var a = true
 
 window.addEventListener('scroll', () => {
   if (window.scrollY != 0 && a == true) {
