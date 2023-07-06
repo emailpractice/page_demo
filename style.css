@@ -497,6 +497,7 @@ html {
     top: -10vh;
     margin-top: 1rem;
     box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
+    object-fit: cover;
 }
 
 .showcase_text {
@@ -826,6 +827,7 @@ html {
         top: 85vh;
         margin-top: 1rem;
         box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
+        object-fit: cover;
     }
 
     .showcase_text {
@@ -1067,6 +1069,7 @@ html {
         top: 80vh;
         margin-top: 1rem;
         box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
+        object-fit: cover;
     }
 
     .showcase_text {
