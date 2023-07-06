@@ -697,13 +697,45 @@ html {
         border-radius: 3px;
         position: fixed;
         top: 4.2vh;
-        left: 76vw;
+        left: 73vw;
         font-size: 0.75rem;
         display: flex;
         justify-content: center;
         align-items: center;
         color: aliceblue;
         z-index: 20;
+    }
+
+
+    .show_start_your_order_text {
+        position: absolute;
+        top: 42.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(252, 252, 252);
+        font-size: 6vw;
+        animation-name: fade_in_start_your_order_text;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        opacity: 0%;
+
+    }
+
+
+    .not_show_start_your_order_text {
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: aliceblue;
+        font-size: 6vw;
+        animation-name: fade_out_start_your_order_text;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        opacity: 0%;
+
     }
 
     @keyframes going_downward {
@@ -715,14 +747,14 @@ html {
 
         100% {
             left: 49.3vw;
-            bottom: -40px;
+            bottom: -60px;
 
         }
     }
 
     .pls_scroll_down_not_showed {
         position: absolute;
-        width: 1.2px;
+        width: 1.1px;
         height: 60px;
         background-color: rgb(170, 150, 38);
         animation-name: scroll_down_not_showed;
@@ -800,7 +832,7 @@ html {
         writing-mode: vertical-lr;
         position: relative;
         left: 23vw;
-        top: 160vw;
+        top: 153vw;
         color: aliceblue;
         font-size: 3vw;
 
@@ -895,12 +927,12 @@ html {
     .dm_us_to_order {
         width: 100vw;
         /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
-        font-size: 2vw;
+        font-size: 4vw;
         color: aliceblue;
     }
 
     .messanger_example {
-        width: 750px;
+        width: 900px;
         height: auto;
         flex-shrink: 1;
     }
@@ -909,7 +941,7 @@ html {
         position: relative;
         top: -20px;
         width: 60vw;
-        font-size: 1.5vw;
+        font-size: 3vw;
         color: #fff;
 
     }

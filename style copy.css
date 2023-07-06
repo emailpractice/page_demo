@@ -296,32 +296,7 @@ html {
 
 }
 
-@media screen and (max-width:475px) {
-    .fbicon {
-        width: 1.5rem;
-        position: fixed;
-        top: 5vh;
-        left: 94vw;
-        background-image: url(./Facebook徽標.png);
-    }
 
-    .anchor_button_order_page {
-        width: 3rem;
-        height: 2 rem;
-        background-color: brown;
-        border-radius: 3px;
-        position: fixed;
-        top: 4.5vh;
-        left: 80vw;
-        font-size: 0.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: aliceblue;
-        z-index: 20;
-    }
-
-}
 
 
 
@@ -496,63 +471,65 @@ html {
 }
 
 .showcase_toptext {
-    position: absolute;
+    position: relative;
     width: 500px;
     color: aliceblue;
-    font-size: 3vw;
-    left: 42.5%;
-    top: 115vh;
+    font-size: 4vw;
+    left: 44.5%;
+    top: -15vh;
 }
 
 .showcase_toptext_line {
-    position: absolute;
-    left: 47.2%;
-    top: 123vh;
-    width: 45px;
+    position: relative;
+    left: 49.5%;
+    top: -13vh;
+    width: 5vw;
     height: 2px;
     background-color: white;
 
 }
 
+.flex_outer_container {
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 6rem;
+
+}
+
+.flex_inner_container {
+    position: relative;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+}
 
 .showcase_pic {
-    position: relative;
-    width: 50vw;
-    height: 40vw;
-    left: 46vw;
-    top: -10vh;
-    margin-top: 1rem;
+    margin-right: 10vw;
     box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
+    flex-grow: 1;
+}
+
+.gap {
+    flex-grow: 3;
 }
 
 .showcase_text {
     writing-mode: vertical-lr;
-    position: relative;
-    left: 35vw;
-    top: -65vh;
+    height: 20vw;
+    width: 0.01px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-left: 30vw;
     color: aliceblue;
     font-size: 3vw;
     text-align: center;
+    flex-grow: 1;
 }
 
-.showcase_text_line {
-    position: relative;
-    left: 35.2vw;
-    top: -70vh;
-    width: 4vw;
-    height: 1px;
-    background-color: white;
-
-}
-
-.showcase_text_line2 {
-    position: relative;
-    left: 35.2vw;
-    top: -60vh;
-    width: 4vw;
-    height: 2px;
-    background-color: white;
-}
 
 .parser {
     margin-bottom: 50%;
@@ -566,44 +543,44 @@ html {
 
 .aroma_the_page_tittle {
 
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     position: relative;
-    width: 500px;
-    top: -65vh;
-    left: 44.5vw;
+
+    top: -40vw;
+    left: 42.5vw;
     color: aliceblue;
     padding-bottom: 15px;
 }
 
 .aroma_the_page_text {
 
-    font-size: 2vw;
-    width: 500px;
+    font-size: 2.5vw;
+
     position: relative;
-    top: -65vh;
-    left: 42.7vw;
+    top: -40vw;
+    left: 40.7vw;
     color: aliceblue;
 
 }
 
 .aroma_the_page_text2 {
 
-    font-size: 2vw;
-    width: 500px;
+    font-size: 2.5vw;
+
     position: relative;
-    top: -65vh;
-    left: 40vw;
+    top: -40vw;
+    left: 38vw;
     color: aliceblue;
 
 }
 
 .aroma_the_page_text3 {
 
-    font-size: 2vw;
-    width: 500px;
+    font-size: 2.5vw;
+
     position: relative;
-    top: -65vh;
-    left: 38vw;
+    top: -40vw;
+    left: 35vw;
     color: aliceblue;
 
 }
@@ -616,7 +593,7 @@ html {
     width: 55vw;
     height: auto;
     left: 25vw;
-    top: -40vh;
+    top: -20vh;
     /* Set up positioning */
     position: relative;
     box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.7);
@@ -626,34 +603,48 @@ html {
 
 #the_order_page {
     position: absolute;
-    top: 830vh;
+    top: 820vh;
 }
 
+
+.flex_container {
+    position: relative;
+    top: 80px;
+    width: 100vw;
+    height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5px;
+
+
+}
+
+.flex_container>div {
+    position: relative;
+    left: 200px;
+}
+
+.flex_container>img {}
 
 
 .dm_us_to_order {
     width: 50vw;
     /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
     font-size: 2vw;
-    position: relative;
-    top: -105vh;
-    left: 21%;
     color: aliceblue;
 }
 
 .messanger_example {
-    position: relative;
-    top: -10vh;
-    left: 11vw;
+    width: 750px;
+    height: auto;
+    flex-shrink: 1;
 }
-
-
 
 .price_text {
     position: relative;
+    top: -50px;
     width: 30vw;
-    top: -20vh;
-    left: 32%;
     font-size: 1.5vw;
     color: #fff;
 
@@ -661,7 +652,7 @@ html {
 
 .foot {
     position: relative;
-    top: 0vh;
+    bottom: -90vh;
     width: 100vw;
     height: 40px;
     background-color: #000;
@@ -672,31 +663,339 @@ html {
 
 }
 
+/*475
+475
+475
+475
+475
+475
+475
+475
+475
+475
+475
+475*/
+@media screen and (max-width:474.99px) {
+    .show_logo1 {
+        position: relative;
+        width: 30vw;
+        top: -6.5vw;
+        left: -3vw;
+        opacity: 0;
+        animation-name: fade_in_logo1;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
 
-/* 從scroll頁面到結尾 */
-@media screen and (max-width: 768px) {
+    .not_show_logo1 {
+        position: relative;
+        width: 30vw;
+        top: -6.5vw;
+        left: -3vw;
+        animation-name: fade_out_logo1;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    .fbicon {
+        width: 1.6rem;
+        position: fixed;
+        top: 4.5vh;
+        left: 93vw;
+        background-image: url(./Facebook徽標.png);
+    }
+
+    .anchor_button_order_page {
+        width: 4.5rem;
+        height: 3 rem;
+        background-color: brown;
+        border-radius: 3px;
+        position: fixed;
+        top: 4.2vh;
+        left: 76vw;
+        font-size: 0.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        z-index: 20;
+    }
 
     @keyframes going_downward {
         0% {
             left: 49.3vw;
-            bottom: 20%;
+            bottom: -2%;
 
         }
 
         100% {
             left: 49.3vw;
-            bottom: -80px;
+            bottom: -40px;
 
         }
     }
 
+    .pls_scroll_down_not_showed {
+        position: absolute;
+        width: 1.2px;
+        height: 60px;
+        background-color: rgb(170, 150, 38);
+        animation-name: scroll_down_not_showed;
+        animation-duration: 1.3s;
+        animation-delay: 90ms;
+        animation-iteration-count: 1;
 
+    }
 
 
     .show_scroll_text_vertical {
         writing-mode: vertical-lr;
         position: absolute;
-        top: 75vh;
+        top: 80vh;
+        left: 49.3vw;
+        transform: translate(-50%, 0%);
+        font-size: 0.75rem;
+
+        letter-spacing: 2px;
+        color: aliceblue;
+        animation-name: show_scroll_text;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        opacity: 0%;
+    }
+
+
+
+    .not_show_scroll_text_vertical {
+        writing-mode: vertical-lr;
+        position: absolute;
+        top: 80vh;
+        left: 49.3vw;
+        transform: translate(-50%, 0%);
+        font-size: 0.75rem;
+
+        letter-spacing: 2px;
+        color: aliceblue;
+        animation-name: not_show_scroll_text;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    .showcase_toptext {
+        position: relative;
+        width: 500px;
+        color: aliceblue;
+        font-size: 5vw;
+        left: 40.5%;
+        top: 80vh;
+    }
+
+    .showcase_toptext_line {
+        position: relative;
+        left: 47.2%;
+        top: 81vh;
+        width: 6vw;
+        height: 2px;
+        background-color: white;
+    }
+
+    .showcase_pic {
+        position: relative;
+        width: 50vw;
+        height: 40vw;
+        left: 36vw;
+        top: 85vh;
+        margin-top: 1rem;
+        box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
+    }
+
+    .showcase_text {
+        writing-mode: vertical-lr;
+        position: relative;
+        left: 23vw;
+        top: 160vw;
+        color: aliceblue;
+        font-size: 3vw;
+
+        height: 100px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+
+
+    .aroma_the_page_tittle {
+        font-size: 6vw;
+        position: relative;
+        width: 500px;
+        top: 80vh;
+        left: 35.5vw;
+        color: aliceblue;
+        padding-bottom: 15px;
+    }
+
+    .aroma_the_page_text {
+
+        font-size: 4vw;
+        width: 500px;
+        position: relative;
+        top: 80vh;
+        left: 34.7vw;
+        color: aliceblue;
+
+    }
+
+    .aroma_the_page_text2 {
+
+        font-size: 4vw;
+        width: 500px;
+        position: relative;
+        top: 80vh;
+        left: 29vw;
+        color: aliceblue;
+
+    }
+
+    .aroma_the_page_text3 {
+
+        font-size: 4vw;
+        width: 500px;
+        position: relative;
+        top: 80vh;
+        left: 24vw;
+        color: aliceblue;
+
+    }
+
+    .whole_set_img {
+
+        /* Set up proportionate scaling */
+        width: 85vw;
+        height: auto;
+        left: 8vw;
+        top: 100vh;
+        /* Set up positioning */
+        position: relative;
+        box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.7);
+        margin-top: 110px;
+
+    }
+
+    #the_order_page {
+        position: absolute;
+        top: 1360vh;
+    }
+
+    .flex_container {
+        position: relative;
+        top: 120vh;
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5px;
+
+
+    }
+
+    .flex_container>div {
+        position: relative;
+        left: 35vw;
+    }
+
+    .flex_container>img {}
+
+
+    .dm_us_to_order {
+        width: 100vw;
+        /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
+        font-size: 2vw;
+        color: aliceblue;
+    }
+
+    .messanger_example {
+        width: 750px;
+        height: auto;
+        flex-shrink: 1;
+    }
+
+    .price_text {
+        position: relative;
+        top: -20px;
+        width: 60vw;
+        font-size: 1.5vw;
+        color: #fff;
+
+    }
+
+    .foot {
+        position: relative;
+        top: 140vh;
+        width: 100vw;
+        height: 40px;
+        background-color: #000;
+        color: #fff;
+        font-size: 2vw;
+        text-indent: 32vw;
+        line-height: 20px;
+    }
+}
+
+/* 475-767
+475-767
+475-767
+475-767
+475-767
+475-767
+475-767
+475-767
+475-767
+475-767*/
+@media (min-width: 475px) and (max-width: 767.99px) {
+    .fbicon {
+        width: 1.6rem;
+        position: fixed;
+        top: 4.5vh;
+        left: 93vw;
+        background-image: url(./Facebook徽標.png);
+    }
+
+    .anchor_button_order_page {
+        width: 4.5rem;
+        height: 3 rem;
+        background-color: brown;
+        border-radius: 3px;
+        position: fixed;
+        top: 4.2vh;
+        left: 76vw;
+        font-size: 0.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        z-index: 20;
+    }
+
+    @keyframes going_downward {
+        0% {
+            left: 49.3vw;
+            bottom: -1%;
+        }
+
+        100% {
+            left: 49.3vw;
+            bottom: -60px;
+
+        }
+    }
+
+    .show_scroll_text_vertical {
+        writing-mode: vertical-lr;
+        position: absolute;
+        top: 80vh;
         left: 49.3vw;
         transform: translate(-50%, 0%);
         font-size: 1rem;
@@ -714,7 +1013,7 @@ html {
     .not_show_scroll_text_vertical {
         writing-mode: vertical-lr;
         position: absolute;
-        top: 75vh;
+        top: 80vh;
         left: 49.3vw;
         transform: translate(-50%, 0%);
         font-size: 1rem;
@@ -748,7 +1047,7 @@ html {
         position: relative;
         width: 50vw;
         height: 40vw;
-        left: 46vw;
+        left: 36vw;
         top: 80vh;
         margin-top: 1rem;
         box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
@@ -757,84 +1056,68 @@ html {
     .showcase_text {
         writing-mode: vertical-lr;
         position: relative;
-        left: 35vw;
-        top: 66vh;
+        left: 25vw;
+        top: 62vh;
         color: aliceblue;
         font-size: 3vw;
+        height: 20vw;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
         text-align: center;
     }
 
-    .showcase_text_line {
-        position: relative;
-        left: 35.1vw;
-        top: 65vh;
-        width: 4vw;
-        height: 1px;
-        background-color: white;
 
-    }
-
-    .showcase_text_line2 {
-        position: relative;
-        left: 35.1vw;
-        top: 68vh;
-        width: 4vw;
-        height: 1px;
-        background-color: white;
-    }
 
     .aroma_the_page_tittle {
 
-        font-size: 2.5vw;
+        font-size: 6vw;
         position: relative;
         width: 500px;
         top: 65vh;
-        left: 44.5vw;
+        left: 34.5vw;
         color: aliceblue;
         padding-bottom: 15px;
     }
 
     .aroma_the_page_text {
 
-        font-size: 2vw;
+        font-size: 4vw;
         width: 500px;
         position: relative;
         top: 65vh;
-        left: 42.7vw;
+        left: 32.7vw;
         color: aliceblue;
 
     }
 
     .aroma_the_page_text2 {
 
-        font-size: 2vw;
+        font-size: 4vw;
         width: 500px;
         position: relative;
         top: 65vh;
-        left: 40vw;
+        left: 28vw;
         color: aliceblue;
 
     }
 
     .aroma_the_page_text3 {
 
-        font-size: 2vw;
+        font-size: 4vw;
         width: 500px;
         position: relative;
         top: 65vh;
-        left: 38vw;
+        left: 23vw;
         color: aliceblue;
 
     }
 
-
-
     .whole_set_img {
 
         /* Set up proportionate scaling */
-        width: 55vw;
+        width: 70vw;
         height: auto;
-        left: 25vw;
+        left: 18vw;
         top: 70vh;
         /* Set up positioning */
         position: relative;
@@ -848,28 +1131,46 @@ html {
         top: 600vh;
     }
 
+
+    .flex_container {
+        position: relative;
+        top: 82vh;
+        width: 100vw;
+        height: 40vh;
+
+        display: flex;
+        flex-direction: column;
+        gap: 0.5px;
+
+
+    }
+
+    .flex_container>div {
+        position: relative;
+        left: 200px;
+    }
+
+    .flex_container>img {}
+
+
     .dm_us_to_order {
         width: 50vw;
         /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
         font-size: 3vw;
-        position: relative;
-        top: 62vh;
-        left: 18%;
         color: aliceblue;
     }
 
     .messanger_example {
-        position: relative;
-        top: 90vh;
-        left: 11vw;
+        width: 750px;
+        height: auto;
+        flex-shrink: 1;
     }
 
     .price_text {
         position: relative;
-        width: 50vw;
-        top: 87vh;
-        left: 28%;
-        font-size: 3vw;
+        top: -50px;
+        width: 30vw;
+        font-size: 2vw;
         color: #fff;
 
     }
@@ -882,11 +1183,25 @@ html {
         background-color: #000;
         color: #fff;
         font-size: 3vw;
-        text-indent: 40vw;
+        text-indent: 20vw;
         line-height: 20px;
 
     }
 }
+
+/*768-1023
+768-1023
+768-1023
+768-1023
+768-1023
+768-1023
+768-1023
+768-1023
+768-1023
+768-1023
+768-1023
+768-1023*/
+@media (min-width: 768px) and (max-width: 1023.99px) {}
 
 /*11111111111111
 11111111111111
