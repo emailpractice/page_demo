@@ -543,8 +543,8 @@ html {
 
     font-size: 2.5vw;
     position: relative;
-    width: 500px;
-    top: -65vh;
+
+    top: -68vh;
     left: 44.5vw;
     color: aliceblue;
     padding-bottom: 15px;
@@ -553,9 +553,9 @@ html {
 .aroma_the_page_text {
 
     font-size: 2vw;
-    width: 500px;
+
     position: relative;
-    top: -65vh;
+    top: -68vh;
     left: 42.7vw;
     color: aliceblue;
 
@@ -564,9 +564,9 @@ html {
 .aroma_the_page_text2 {
 
     font-size: 2vw;
-    width: 500px;
+
     position: relative;
-    top: -65vh;
+    top: -68vh;
     left: 40vw;
     color: aliceblue;
 
@@ -575,9 +575,9 @@ html {
 .aroma_the_page_text3 {
 
     font-size: 2vw;
-    width: 500px;
+
     position: relative;
-    top: -65vh;
+    top: -68vh;
     left: 38vw;
     color: aliceblue;
 
@@ -591,7 +591,7 @@ html {
     width: 55vw;
     height: auto;
     left: 25vw;
-    top: -40vh;
+    top: -20vh;
     /* Set up positioning */
     position: relative;
     box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.7);
@@ -605,32 +605,40 @@ html {
 }
 
 
+.flex_container {
+    position: relative;
+    top: 80px;
+    width: 100vw;
+    height: 40vh;
+    border: 10px red solid;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.flex_container>div {
+    position: relative;
+    left: 200px;
+}
+
+.flex_container>img {}
+
 
 .dm_us_to_order {
     width: 50vw;
     /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
     font-size: 2vw;
-    position: relative;
-    top: -105vh;
-    left: 21%;
     color: aliceblue;
 }
 
 .messanger_example {
-    position: relative;
-    width: 50vw;
+    width: 750px;
     height: auto;
-    top: -10vh;
-    left: 11vw;
+    flex-shrink: 1;
 }
 
-
-
 .price_text {
-    position: relative;
     width: 30vw;
-    top: -20vh;
-    left: 32%;
     font-size: 1.5vw;
     color: #fff;
 
@@ -638,7 +646,7 @@ html {
 
 .foot {
     position: relative;
-    top: 0vh;
+    bottom: -90vh;
     width: 100vw;
     height: 40px;
     background-color: #000;
@@ -866,7 +874,7 @@ html {
         width: 500px;
         position: relative;
         top: 80vh;
-        left: 24w;
+        left: 24vw;
         color: aliceblue;
 
     }
