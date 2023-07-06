@@ -585,14 +585,14 @@ html {
 }
 
 #the_order_page {
-    position: absolute;
-    top: 820vh;
+    position: relative;
+    top: 100px;
 }
 
 
 .flex_container {
     position: relative;
-    top: 80px;
+    top: 100px;
     width: 100vw;
     height: 40vh;
 
@@ -612,7 +612,7 @@ html {
 
 
 .dm_us_to_order {
-    width: 50vw;
+
     /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
     font-size: 2vw;
     color: aliceblue;
@@ -900,8 +900,8 @@ html {
     }
 
     #the_order_page {
-        position: absolute;
-        top: 1360vh;
+        position: relative;
+        top: 120vh;
     }
 
     .flex_container {
@@ -1140,8 +1140,8 @@ html {
     }
 
     #the_order_page {
-        position: absolute;
-        top: 600vh;
+        position: relative;
+        top: 82vh;
     }
 
 
