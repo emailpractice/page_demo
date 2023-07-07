@@ -247,8 +247,8 @@ html {
 
 /*字體加粗一些會比較好看。可能是微軟正黑體? 或是直接加粗?*/
 .anchor_button_order_page {
-    width: 6vw;
-    height: 3vw;
+    width: 7Vw;
+    height: 3.5vw;
     background-color: brown;
     border-radius: 3px;
     position: fixed;
@@ -261,6 +261,12 @@ html {
     color: aliceblue;
     z-index: 1;
 }
+
+.anchor_button_order_page:HOVER {
+
+    background-color: goldenrod;
+}
+
 
 .anchor_button_order_page:active {
 
