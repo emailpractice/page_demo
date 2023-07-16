@@ -28,14 +28,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="三十分鐘內外送到府，讓每個客人都可以享用剛出爐的完美金黃脆皮燒肉!">
+    <meta name="description" content="三十分鐘內外送到府，讓客人享用剛出爐的完美金黃脆皮燒肉!">
     <meta name="viewport" content="height=device-height, 
                       width=device-width, initial-scale=1.0, 
                       minimum-scale=1.0, maximum-scale = 1.0,
                       user-scalable=no, target-densitydpi=device-dpi">
     <!-- 這一大串是因為chrome會讓position fixed的圖片還是會隨著上下滾輪稍微移動一點點、寬度縮到比較小(小於700左右)的時候，上下會有空白。但明明img的長寬已經跟設備的長寬等大，應該要占滿整個畫面。
                         https://stackoverflow.com/questions/44679794/position-fixed-on-chrome-mobile-causing-element-to-move-on-scroll-up-down/51322362#51322362?newreg=ccca2ba641424c5098dd310e383a976b -->
-    <title>稍飽脆皮燒肉</title>
+    <title>稍飽脆皮燒肉|30分鐘外送</title>
     <link rel="icon" type="image/x-icon" href="/titleicon.ico">
 
 
@@ -73,7 +73,7 @@
         "answerCount": "1",
         "acceptedAnswer": {
          "@type": "Answer",
-        "text": "餐盒一份150元，免外送費，30分鐘內到府。"
+        "text": "餐盒一份150元，免外送費。30分鐘內送到。"
         }
       }
     }
@@ -89,6 +89,46 @@
           "text": "為了確保餐點都是以剛出爐的狀態被享用，我們只服務台南市的東區、北區、中西區、南區、永康區、仁德區"
           }
         }
+      }
+
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "稍飽脆皮燒肉",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "148 W 51st St",
+          "addressLocality": "Tainan",
+          "addressRegion": "TW",
+          "postalCode": "701020",
+          "addressCountry": "TW"
+        },
+       
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 22.993829044644386,
+          "longitude": 120.22297432510985
+        },
+        "telephone": "+886-956909890",
+        "servesCuisine": "Taiwan",
+        "priceRange": "$",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday"
+              "Wednesday"
+              "Thursday"
+              "Friday"
+              "Saturday"
+              "Sunday"
+            ],
+            "opens": "11:00",
+            "closes": "19:00"
+          },
+        ],
+        "acceptsReservations": "True"
       }
     </script>
 
