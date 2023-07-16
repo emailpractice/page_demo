@@ -616,7 +616,7 @@ html {
 @media screen and (max-width:474.99px) {
     .show_logo1 {
         position: relative;
-        width: 30vw;
+        width: 300vw;
         top: -6.5vw;
         left: -3vw;
         opacity: 0;
