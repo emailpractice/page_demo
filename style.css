@@ -312,7 +312,7 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(252, 252, 252);
-    font-size: 4.5vw;
+    font-size: 3vw;
     animation-name: fade_in_start_your_order_text;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
@@ -654,7 +654,7 @@ html {
 
 }
 
-/*475
+/*475  好像是我redmi手機的尺寸
 475
 475
 475
@@ -721,7 +721,7 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
         color: rgb(252, 252, 252);
-        font-size: 4.5vw;
+        font-size: 2.5vw;
         animation-name: fade_in_start_your_order_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
@@ -737,7 +737,7 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
         color: aliceblue;
-        font-size: 6vw;
+        font-size: 2.5vw;
         animation-name: fade_out_start_your_order_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
