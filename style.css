@@ -647,11 +647,11 @@ html {
 
     .anchor_button_order_page {
         width: 4.5rem;
-        height: 3 rem;
+        height: 3.8 rem;
         background-color: brown;
         border-radius: 3px;
         position: fixed;
-        top: 4.2vh;
+        top: 4.3vh;
         left: 69vw;
         font-size: 0.75rem;
         display: flex;
