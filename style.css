@@ -275,51 +275,6 @@ html {
 }
 
 
-@media screen and (max-width:1280px) {
-    .fbicon {
-        width: 1.5rem;
-        position: fixed;
-        top: 5vh;
-        left: 94vw;
-        background-image: url(./Facebook徽標.png);
-    }
-
-    .anchor_button_order_page {
-        width: 3rem;
-        height: 2rem;
-        background-color: brown;
-        border-radius: 3px;
-        position: fixed;
-        top: 4.5vh;
-        left: 85vw;
-        font-size: 0.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: aliceblue;
-        z-index: 20;
-    }
-
-}
-
-
-
-
-
-.show_start_your_order_text {
-    position: absolute;
-    top: 42.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(252, 252, 252);
-    font-size: 3vw;
-    animation-name: fade_in_start_your_order_text;
-    animation-duration: 0.3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    opacity: 0%;
-
-}
 
 
 
@@ -340,7 +295,7 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: aliceblue;
-    font-size: 4.5vw;
+    font-size: 3vw;
     animation-name: fade_out_start_your_order_text;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
@@ -1237,4 +1192,48 @@ html {
 11111111111111
 11111111111111
 11111111111111*/
+@media screen and (max-width:1280px) {
+    .fbicon {
+        width: 1.5rem;
+        position: fixed;
+        top: 5vh;
+        left: 94vw;
+        background-image: url(./Facebook徽標.png);
+    }
+
+    .anchor_button_order_page {
+        width: 3rem;
+        height: 2rem;
+        background-color: brown;
+        border-radius: 3px;
+        position: fixed;
+        top: 4.5vh;
+        left: 85vw;
+        font-size: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        z-index: 20;
+    }
+
+}
+
+
+
+.show_start_your_order_text {
+    position: absolute;
+    top: 42.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(252, 252, 252);
+    font-size: 4.5vw;
+    animation-name: fade_in_start_your_order_text;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+
+}
+
 /*如果顯示上看起來有問題，但是圖片的數據又正常，可以試著點兩下(重開)那個"裝置模擬"的按鈕(變成手機尺寸)，或者ctrl+/- 調整放大比率*/
