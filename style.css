@@ -185,6 +185,7 @@ html {
     }
 }
 
+
 .not_show_logo1 {
     position: relative;
     width: 15vw;
@@ -287,6 +288,21 @@ html {
     to {
         opacity: 100%;
     }
+}
+
+.show_start_your_order_text {
+    position: absolute;
+    top: 42.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(252, 252, 252);
+    font-size: 3vw;
+    animation-name: fade_in_start_your_order_text;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+
 }
 
 .not_show_start_your_order_text {
@@ -609,7 +625,7 @@ html {
 
 }
 
-/*475  好像是我redmi手機的尺寸
+/*475  是我redmi手機的尺寸
 475
 475
 475
@@ -934,6 +950,31 @@ html {
 475-767
 475-767*/
 @media (min-width: 475px) and (max-width: 767.99px) {
+
+    .show_logo1 {
+        position: relative;
+        width: 20vw;
+        top: -3vw;
+        left: -1vw;
+        opacity: 0;
+        animation-name: fade_in_logo1;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    .not_show_logo1 {
+        position: relative;
+        width: 20vw;
+        top: -3vw;
+        left: -1vw;
+        animation-name: fade_out_logo1;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+
     .fbicon {
         width: 1.6rem;
         position: fixed;
@@ -1221,19 +1262,6 @@ html {
 
 
 
-.show_start_your_order_text {
-    position: absolute;
-    top: 42.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(252, 252, 252);
-    font-size: 4.5vw;
-    animation-name: fade_in_start_your_order_text;
-    animation-duration: 0.3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    opacity: 0%;
 
-}
 
 /*如果顯示上看起來有問題，但是圖片的數據又正常，可以試著點兩下(重開)那個"裝置模擬"的按鈕(變成手機尺寸)，或者ctrl+/- 調整放大比率*/
