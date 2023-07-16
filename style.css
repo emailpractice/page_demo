@@ -6,7 +6,8 @@
 
 
 
-    /*讓跳轉anchor的時候是滑下去的 而不是直接跳轉*/
+    /*475 768 
+    讓跳轉anchor的時候是滑下去的 而不是直接跳轉*/
 }
 
 body,
@@ -720,7 +721,7 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
         color: rgb(252, 252, 252);
-        font-size: 6vw;
+        font-size: 4.5vw;
         animation-name: fade_in_start_your_order_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
