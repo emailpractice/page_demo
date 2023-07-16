@@ -668,7 +668,7 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
         color: rgb(252, 252, 252);
-        font-size: 3vw;
+        font-size: 4vw;
         animation-name: fade_in_start_your_order_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
@@ -684,7 +684,7 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
         color: aliceblue;
-        font-size: 3vw;
+        font-size: 4vw;
         animation-name: fade_out_start_your_order_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
@@ -711,7 +711,7 @@ html {
         position: absolute;
         width: 1.1px;
         height: 60px;
-        background-color: rgb(170, 150, 38);
+        background-color: rgb(255, 255, 255);
         animation-name: scroll_down_not_showed;
         animation-duration: 1.3s;
         animation-delay: 90ms;
