@@ -676,7 +676,7 @@ html {
         border-radius: 3px;
         position: fixed;
         top: 4.2vh;
-        left: 73vw;
+        left: 69vw;
         font-size: 0.75rem;
         display: flex;
         justify-content: center;
@@ -692,7 +692,7 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
         color: rgb(252, 252, 252);
-        font-size: 2.5vw;
+        font-size: 3vw;
         animation-name: fade_in_start_your_order_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
@@ -708,7 +708,7 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
         color: aliceblue;
-        font-size: 2.5vw;
+        font-size: 3vw;
         animation-name: fade_out_start_your_order_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
