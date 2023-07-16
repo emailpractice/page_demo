@@ -1228,32 +1228,7 @@ html {
 11111111111111
 11111111111111
 11111111111111*/
-@media screen and (max-width:1280px) {
-    .fbicon {
-        width: 1.5rem;
-        position: fixed;
-        top: 5vh;
-        left: 94vw;
-        background-image: url(./Facebook徽標.png);
-    }
 
-    .anchor_button_order_page {
-        width: 3rem;
-        height: 2rem;
-        background-color: brown;
-        border-radius: 3px;
-        position: fixed;
-        top: 4.5vh;
-        left: 85vw;
-        font-size: 0.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: aliceblue;
-        z-index: 20;
-    }
-
-}
 
 
 
