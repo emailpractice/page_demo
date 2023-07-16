@@ -616,7 +616,7 @@ html {
 @media screen and (max-width:474.99px) {
     .show_logo1 {
         position: relative;
-        width: 300vw;
+        width: 30vw;
         top: -6.5vw;
         left: -3vw;
         opacity: 0;
@@ -668,7 +668,7 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
         color: rgb(252, 252, 252);
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         animation-name: fade_in_start_your_order_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
@@ -684,7 +684,7 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
         color: aliceblue;
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         animation-name: fade_out_start_your_order_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
