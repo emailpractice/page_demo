@@ -984,7 +984,7 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
         color: rgb(252, 252, 252);
-        font-size: 30vw;
+        font-size: 4vw;
         animation-name: fade_in_start_your_order_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
@@ -999,7 +999,7 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
         color: aliceblue;
-        font-size: 30vw;
+        font-size: 4vw;
         animation-name: fade_out_start_your_order_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
