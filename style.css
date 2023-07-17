@@ -751,13 +751,13 @@ html {
         color: aliceblue;
         font-size: 5vw;
         left: 40.5%;
-        top: 80vh;
+        top: -17vh;
     }
 
     .showcase_toptext_line {
         position: relative;
         left: 47.2%;
-        top: 81vh;
+        top: -16.5vh;
         width: 6vw;
         height: 2px;
         background-color: white;
@@ -768,7 +768,7 @@ html {
         width: 50vw;
         height: 40vw;
         left: 36vw;
-        top: 85vh;
+        top: -15vh;
         margin-top: 1rem;
         box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
         object-fit: cover;
@@ -778,7 +778,7 @@ html {
         writing-mode: vertical-lr;
         position: relative;
         left: 23vw;
-        top: 127vw;
+        top: -55vw;
         color: aliceblue;
         font-size: 3vw;
 
@@ -792,8 +792,8 @@ html {
         font-size: 6vw;
         position: relative;
         width: 500px;
-        top: 80vh;
-        left: 35.5vw;
+        top: -20vh;
+        left: 36.5vw;
         color: aliceblue;
         padding-bottom: 15px;
     }
@@ -803,7 +803,7 @@ html {
         font-size: 4vw;
         width: 500px;
         position: relative;
-        top: 80vh;
+        top: -20vh;
         left: 34.7vw;
         color: aliceblue;
 
@@ -814,7 +814,7 @@ html {
         font-size: 4vw;
         width: 500px;
         position: relative;
-        top: 80vh;
+        top: -20vh;
         left: 29vw;
         color: aliceblue;
 
@@ -825,7 +825,7 @@ html {
         font-size: 4vw;
         width: 500px;
         position: relative;
-        top: 80vh;
+        top: -20vh;
         left: 24vw;
         color: aliceblue;
 
@@ -837,7 +837,7 @@ html {
         width: 85vw;
         height: auto;
         left: 8vw;
-        top: 100vh;
+        top: 0vh;
         /* Set up positioning */
         position: relative;
         box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.7);
@@ -847,7 +847,7 @@ html {
 
     #the_order_page {
         position: relative;
-        top: 120vh;
+        top: 30vh;
     }
 
     .flex_container {
@@ -895,7 +895,7 @@ html {
 
     .foot {
         position: relative;
-        top: 130vh;
+        top: 40vh;
         width: 100vw;
         height: 40px;
         background-color: #000;
