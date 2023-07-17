@@ -16,7 +16,7 @@ html {
 
 /*一般正常用maxwidth100%就可以處理overflow。上面那段是針對手機板的x-overflow*/
 
-.container {}
+
 
 
 
@@ -564,8 +564,8 @@ html {
 
 
 .dm_us_to_order {
-
-    /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
+    position: relative;
+    left: 13vw;
     font-size: 2vw;
     color: aliceblue;
 }
