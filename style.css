@@ -427,13 +427,13 @@ html {
     width: 500px;
     color: aliceblue;
     font-size: 4vw;
-    left: 44.5%;
+    left: 42.5%;
     top: -15vh;
 }
 
 .showcase_toptext_line {
     position: relative;
-    left: 49.5%;
+    left: 47.5%;
     top: -13vh;
     width: 5vw;
     height: 2px;
@@ -467,9 +467,9 @@ html {
 }
 
 
-.parser {
-    margin-bottom: 50%;
 
+.parser {
+    margin-bottom: 42%;
 }
 
 .parser1 {
@@ -555,17 +555,19 @@ html {
 
 }
 
+.flex_container>header {
+    position: relative;
+    left: 230px;
+}
+
 .flex_container>div {
     position: relative;
     left: 230px;
 }
 
-.flex_container>img {}
-
 
 .dm_us_to_order {
     position: relative;
-    left: 13vw;
     font-size: 2vw;
     color: aliceblue;
 }
@@ -858,7 +860,7 @@ html {
         gap: 0.5px;
     }
 
-    .flex_container>div {
+    .flex_container>header {
         position: relative;
         left: 30vw;
     }
@@ -868,6 +870,7 @@ html {
 
     .dm_us_to_order {
         position: relative;
+        left: 10vw;
         top: -20px;
         width: 100vw;
         /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
@@ -949,7 +952,7 @@ html {
 
     .anchor_button_order_page {
         width: 4.5rem;
-        height: 3 rem;
+        height: 2rem;
         background-color: brown;
         border-radius: 3px;
         position: fixed;
@@ -1007,6 +1010,7 @@ html {
 
     }
 
+
     .show_scroll_text_vertical {
         writing-mode: vertical-lr;
         position: absolute;
@@ -1045,14 +1049,14 @@ html {
         color: aliceblue;
         font-size: 4vw;
         left: 40%;
-        top: 76vh;
+        top: -13vh;
     }
 
     .showcase_toptext_line {
         position: relative;
         left: 45.2%;
-        top: 77vh;
-        width: 45px;
+        top: -12vh;
+        width: 6vw;
         height: 2px;
         background-color: white;
 
@@ -1063,7 +1067,7 @@ html {
         width: 50vw;
         height: 40vw;
         left: 36vw;
-        top: 80vh;
+        top: -10vh;
         margin-top: 1rem;
         box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.7);
         object-fit: cover;
@@ -1073,7 +1077,7 @@ html {
         writing-mode: vertical-lr;
         position: relative;
         left: 25vw;
-        top: 62vh;
+        top: -32vh;
         color: aliceblue;
         font-size: 3vw;
         height: 16vw;
@@ -1089,7 +1093,7 @@ html {
         font-size: 6vw;
         position: relative;
         width: 500px;
-        top: 65vh;
+        top: -15vh;
         left: 34.5vw;
         color: aliceblue;
         padding-bottom: 15px;
@@ -1100,7 +1104,7 @@ html {
         font-size: 4vw;
         width: 500px;
         position: relative;
-        top: 65vh;
+        top: -15vh;
         left: 32.7vw;
         color: aliceblue;
 
@@ -1111,7 +1115,7 @@ html {
         font-size: 4vw;
         width: 500px;
         position: relative;
-        top: 65vh;
+        top: -15vh;
         left: 28vw;
         color: aliceblue;
 
@@ -1122,7 +1126,7 @@ html {
         font-size: 4vw;
         width: 500px;
         position: relative;
-        top: 65vh;
+        top: -15vh;
         left: 23vw;
         color: aliceblue;
 
@@ -1134,7 +1138,7 @@ html {
         width: 70vw;
         height: auto;
         left: 18vw;
-        top: 70vh;
+        top: 5vh;
         /* Set up positioning */
         position: relative;
         box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.7);
@@ -1144,13 +1148,13 @@ html {
 
     #the_order_page {
         position: relative;
-        top: 82vh;
+        top: 42vh;
     }
 
 
     .flex_container {
         position: relative;
-        top: 82vh;
+
         width: 100vw;
         height: 40vh;
 
@@ -1161,7 +1165,7 @@ html {
 
     }
 
-    .flex_container>div {
+    .flex_container>header {
         position: relative;
         left: 200px;
     }
@@ -1220,6 +1224,10 @@ html {
 768-1023
 768-1023*/
 @media (min-width: 768px) and (max-width: 1023.99px) {}
+
+.parser {
+    margin-bottom: 105vh;
+}
 
 /*11111111111111
 11111111111111
