@@ -239,7 +239,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: aliceblue;
+    color: white;
     z-index: 1;
 }
 
@@ -289,7 +289,7 @@ img {
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: aliceblue;
+    color: white;
     font-size: 3vw;
     animation-name: fade_out_start_your_order_text;
     animation-duration: 0.3s;
@@ -374,7 +374,7 @@ img {
     font-size: 1.5rem;
 
     letter-spacing: 2px;
-    color: aliceblue;
+    color: white;
     animation-name: show_scroll_text;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
@@ -404,7 +404,7 @@ img {
     left: 49.3vw;
     transform: translate(-50%, 0%);
     font-size: 1.5rem;
-    color: aliceblue;
+    color: white;
     animation-name: not_show_scroll_text;
     animation-duration: 0.2s;
     animation-iteration-count: 1;
@@ -429,7 +429,7 @@ img {
 .showcase_toptext {
     position: relative;
     width: 500px;
-    color: aliceblue;
+    color: white;
     font-size: 4vw;
     left: 42.5%;
     top: -15vh;
@@ -465,7 +465,7 @@ img {
     top: -32vw;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    color: aliceblue;
+    color: white;
     font-size: 3vw;
     text-align: center;
 }
@@ -488,7 +488,7 @@ img {
 
     top: -40vw;
     left: 42.5vw;
-    color: aliceblue;
+    color: white;
     padding-bottom: 15px;
 }
 
@@ -499,7 +499,7 @@ img {
     position: relative;
     top: -40vw;
     left: 40.7vw;
-    color: aliceblue;
+    color: white;
 
 }
 
@@ -510,7 +510,7 @@ img {
     position: relative;
     top: -40vw;
     left: 38vw;
-    color: aliceblue;
+    color: white;
 
 }
 
@@ -521,7 +521,7 @@ img {
     position: relative;
     top: -40vw;
     left: 35vw;
-    color: aliceblue;
+    color: white;
 
 }
 
@@ -573,7 +573,7 @@ img {
 .dm_us_to_order {
     position: relative;
     font-size: 2vw;
-    color: aliceblue;
+    color: white;
 }
 
 .messanger_example {
@@ -661,7 +661,7 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: aliceblue;
+        color: white;
         z-index: 20;
     }
 
@@ -687,7 +687,7 @@ img {
         top: 42%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: aliceblue;
+        color: white;
         font-size: 4.5vw;
         animation-name: fade_out_start_your_order_text;
         animation-duration: 0.3s;
@@ -722,7 +722,7 @@ img {
         font-size: 0.75rem;
 
         letter-spacing: 2px;
-        color: aliceblue;
+        color: white;
         animation-name: show_scroll_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
@@ -741,7 +741,7 @@ img {
         font-size: 0.75rem;
 
         letter-spacing: 2px;
-        color: aliceblue;
+        color: white;
         animation-name: not_show_scroll_text;
         animation-duration: 0.2s;
         animation-iteration-count: 1;
@@ -751,7 +751,7 @@ img {
     .showcase_toptext {
         position: relative;
         width: 500px;
-        color: aliceblue;
+        color: white;
         font-size: 5vw;
         left: 40.5%;
         top: -17vh;
@@ -782,7 +782,7 @@ img {
         position: relative;
         left: 23vw;
         top: -55vw;
-        color: aliceblue;
+        color: white;
         font-size: 3vw;
 
         height: 85px;
@@ -797,7 +797,7 @@ img {
         width: 500px;
         top: -20vh;
         left: 36.2vw;
-        color: aliceblue;
+        color: white;
         padding-bottom: 15px;
     }
 
@@ -808,7 +808,7 @@ img {
         position: relative;
         top: -20vh;
         left: 34.7vw;
-        color: aliceblue;
+        color: white;
 
     }
 
@@ -819,7 +819,7 @@ img {
         position: relative;
         top: -20vh;
         left: 29vw;
-        color: aliceblue;
+        color: white;
 
     }
 
@@ -830,7 +830,7 @@ img {
         position: relative;
         top: -20vh;
         left: 24vw;
-        color: aliceblue;
+        color: white;
 
     }
 
@@ -878,7 +878,7 @@ img {
         width: 100vw;
         /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
         font-size: 4vw;
-        color: aliceblue;
+        color: white;
     }
 
     .messanger_example {
@@ -964,7 +964,7 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: aliceblue;
+        color: white;
         z-index: 20;
     }
 
@@ -1002,7 +1002,7 @@ img {
         top: 42%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: aliceblue;
+        color: white;
         font-size: 4vw;
         animation-name: fade_out_start_your_order_text;
         animation-duration: 0.3s;
@@ -1022,7 +1022,7 @@ img {
         font-size: 1rem;
 
         letter-spacing: 2px;
-        color: aliceblue;
+        color: white;
         animation-name: show_scroll_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
@@ -1038,7 +1038,7 @@ img {
         left: 49.3vw;
         transform: translate(-50%, 0%);
         font-size: 1rem;
-        color: aliceblue;
+        color: white;
         animation-name: not_show_scroll_text;
         animation-duration: 0.2s;
         animation-iteration-count: 1;
@@ -1048,7 +1048,7 @@ img {
     .showcase_toptext {
         position: relative;
         width: 40vw;
-        color: aliceblue;
+        color: white;
         font-size: 4vw;
         left: 40%;
         top: -13vh;
@@ -1080,7 +1080,7 @@ img {
         position: relative;
         left: 25vw;
         top: -32vh;
-        color: aliceblue;
+        color: white;
         font-size: 3vw;
         height: 16vw;
         border-top: 1px solid white;
@@ -1097,7 +1097,7 @@ img {
         width: 500px;
         top: -15vh;
         left: 34.5vw;
-        color: aliceblue;
+        color: white;
         padding-bottom: 15px;
     }
 
@@ -1108,7 +1108,7 @@ img {
         position: relative;
         top: -15vh;
         left: 32.7vw;
-        color: aliceblue;
+        color: whiteblue;
 
     }
 
@@ -1119,7 +1119,7 @@ img {
         position: relative;
         top: -15vh;
         left: 28vw;
-        color: aliceblue;
+        color: white;
 
     }
 
@@ -1130,7 +1130,7 @@ img {
         position: relative;
         top: -15vh;
         left: 23vw;
-        color: aliceblue;
+        color: white;
 
     }
 
@@ -1181,7 +1181,7 @@ img {
         width: 50vw;
         /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
         font-size: 3vw;
-        color: aliceblue;
+        color: white;
     }
 
     .messanger_example {
