@@ -558,7 +558,7 @@ img {
 
 .flex_container>header {
     position: relative;
-    left: 230px;
+    left: 130px;
 }
 
 .flex_container>div {
@@ -870,7 +870,7 @@ img {
 
     .dm_us_to_order {
         position: relative;
-        left: 5vw;
+        left: -5vw;
         top: -20px;
         width: 100vw;
         /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
@@ -1174,7 +1174,7 @@ img {
 
     .dm_us_to_order {
         position: relative;
-        top: -10px;
+        top: -15px;
         width: 50vw;
         /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
         font-size: 3vw;
