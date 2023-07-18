@@ -619,7 +619,7 @@ img {
     .show_logo1 {
         position: relative;
         width: 30vw;
-        top: -4.2vw;
+        top: -4.5vw;
         left: -3vw;
         opacity: 0;
         animation-name: fade_in_logo1;
@@ -631,7 +631,7 @@ img {
     .not_show_logo1 {
         position: relative;
         width: 30vw;
-        top: -4.2vw;
+        top: -4.5vw;
         left: -3vw;
         animation-name: fade_out_logo1;
         animation-duration: 0.3s;
