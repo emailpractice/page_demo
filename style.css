@@ -5,13 +5,18 @@
     max-width: 100%;
 
 
-
     /* 讓跳轉anchor的時候是滑下去的 而不是直接跳轉*/
 }
 
 body,
 html {
     overflow-x: hidden;
+}
+
+
+img {
+    color: white;
+    text-align: center;
 }
 
 /*一般正常用maxwidth100%就可以處理overflow。上面那段是針對手機板的x-overflow*/
