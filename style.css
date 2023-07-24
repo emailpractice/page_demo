@@ -283,7 +283,7 @@ img {
 
 .not_show_start_your_order_text {
     position: absolute;
-    top: 42%;
+    top: 42.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -310,11 +310,11 @@ img {
 
 .pls_scroll_down {
     position: absolute;
-    width: 1.8px;
-    height: 60px;
-    background-color: rgb(170, 150, 38);
+    width: 2.5px;
+    height: 80px;
+    background-color: white;
     animation-name: going_downward;
-    animation-duration: 1.3s;
+    animation-duration: 1.9s;
     animation-delay: 90ms;
     animation-iteration-count: infinite;
 }
@@ -323,7 +323,7 @@ img {
 @keyframes going_downward {
     0% {
         left: 49.3vw;
-        bottom: -2.2%;
+        bottom: 9%;
 
     }
 
@@ -331,7 +331,7 @@ img {
 
     100% {
         left: 49.3vw;
-        bottom: -120px;
+        bottom: -100px;
 
     }
 }
@@ -697,7 +697,7 @@ img {
     @keyframes going_downward {
         0% {
             left: 49.3vw;
-            bottom: -2%;
+            bottom: 7%;
 
         }
 
@@ -969,12 +969,12 @@ img {
     @keyframes going_downward {
         0% {
             left: 49.3vw;
-            bottom: -1%;
+            bottom: 3%;
         }
 
         100% {
             left: 49.3vw;
-            bottom: -60px;
+            bottom: -90px;
 
         }
     }

@@ -32,7 +32,7 @@ function show_scroll_down() {
   elem_downwardline.className = 'pls_scroll_down'
 
 }
-
+/*
 function not_show_scroll_text() {
 
   let elem_scroll_text = document.querySelector('#ele_scroll_text')
@@ -46,7 +46,7 @@ function show_scroll_down_text() {
   element_scroll_text.className = 'show_scroll_text_vertical'
 
 }
-
+ */
 function not_show_logo1() {
 
   let elem_logo1 = document.querySelector('#ele_logo1')
@@ -81,7 +81,7 @@ window.addEventListener('scroll', () => {
   if (window.scrollY != 0 && a == true) {
     add_black_overlay()  /*變模糊的函數*/
     not_show_scroll_down()
-    not_show_scroll_text()
+    /*not_show_scroll_text()*/
     not_show_logo1()
     not_show_start_your_order_text()
     a = false
@@ -90,7 +90,7 @@ window.addEventListener('scroll', () => {
 
     remove_black_overlay()
     show_scroll_down()
-    show_scroll_down_text()
+    /*show_scroll_down_text()*/
     show_logo1()
     show_start_your_order_text()
     a = true
