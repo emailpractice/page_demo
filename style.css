@@ -429,13 +429,13 @@ img {
     color: white;
     font-size: 4vw;
     left: 42.5%;
-    top: -15vh;
+    top: -29vh;
 }
 
 .showcase_toptext_line {
     position: relative;
     left: 47.5%;
-    top: -13vh;
+    top: -27vh;
     width: 5vw;
     height: 2px;
     background-color: white;
@@ -1222,11 +1222,33 @@ img {
 768-1023
 768-1023
 768-1023*/
-@media (min-width: 768px) and (max-width: 1023.99px) {}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+    .showcase_toptext {
+        position: relative;
+        width: 40vw;
+        color: white;
+        font-size: 4vw;
+        left: 40%;
+        top: -20vh;
+    }
+
+    .showcase_toptext_line {
+        position: relative;
+        left: 45.2%;
+        top: -19vh;
+        width: 6vw;
+        height: 2px;
+        background-color: white;
+
+    }
+}
 
 .parser {
     margin-bottom: 105vh;
 }
+
+
+
 
 /*11111111111111
 11111111111111
