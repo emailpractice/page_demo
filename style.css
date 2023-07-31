@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
+
     max-width: 100%;
 
 
@@ -246,14 +246,22 @@ img {
 }
 
 
-.anchor_button_order_page:active {
 
-    background-color: goldenrod;
+/*其他視窗版本的都還是absolute 之後可以去統一。 當時改成Relative是因為網站從下面滑到最上時，showcasetoptetxt會跑來最上面的位置，
+我在猜會不會是因為absolute的屬性沒有佔住應該佔的空間，才會發生這樣的事情。所以就改成relative。結果還是會發生問題，所以其他版本的我就讓他們維持absolute了*/
+.show_start_your_order_text {
+    position: relative;
+    top: 42.5%;
+    left: 37%;
+    color: rgb(252, 252, 252);
+    font-size: 3vw;
+    animation-name: fade_in_start_your_order_text;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+
 }
-
-
-
-
 
 @keyframes fade_in_start_your_order_text {
     from {
@@ -266,27 +274,11 @@ img {
     }
 }
 
-.show_start_your_order_text {
-    position: absolute;
-    top: 42.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(252, 252, 252);
-    font-size: 3vw;
-    animation-name: fade_in_start_your_order_text;
-    animation-duration: 0.3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    opacity: 0%;
-
-}
-
 .not_show_start_your_order_text {
-    position: absolute;
+    position: relative;
     top: 42.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    left: 37%;
+    color: rgb(252, 252, 252);
     font-size: 3vw;
     animation-name: fade_out_start_your_order_text;
     animation-duration: 0.3s;
@@ -307,9 +299,9 @@ img {
     }
 }
 
-
+/*其他版本是absolute*/
 .pls_scroll_down {
-    position: absolute;
+    position: relative;
     width: 2.5px;
     height: 80px;
     background-color: white;
@@ -323,7 +315,7 @@ img {
 @keyframes going_downward {
     0% {
         left: 49.3vw;
-        bottom: 9%;
+        bottom: -22vh;
 
     }
 
@@ -331,18 +323,18 @@ img {
 
     100% {
         left: 49.3vw;
-        bottom: -100px;
+        bottom: -60vh;
 
     }
 }
 
 .pls_scroll_down_not_showed {
-    position: absolute;
-    width: 1.5px;
-    height: 60px;
-    background-color: rgb(170, 150, 38);
+    position: relative;
+    width: 2.5px;
+    height: 80px;
+    background-color: white;
     animation-name: scroll_down_not_showed;
-    animation-duration: 1.3s;
+    animation-duration: 1.9s;
     animation-delay: 90ms;
     animation-iteration-count: 1;
 
@@ -362,66 +354,6 @@ img {
 }
 
 
-.show_scroll_text_vertical {
-    writing-mode: vertical-lr;
-    position: absolute;
-    top: 85vh;
-    left: 49.3vw;
-    transform: translate(-50%, 0%);
-    font-size: 1.5rem;
-
-    letter-spacing: 2px;
-    color: white;
-    animation-name: show_scroll_text;
-    animation-duration: 0.3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    opacity: 0%;
-}
-
-
-@keyframes show_scroll_text {
-    0% {
-
-        opacity: 0%;
-    }
-
-
-
-    100% {
-
-        opacity: 100%;
-    }
-}
-
-.not_show_scroll_text_vertical {
-    writing-mode: vertical-lr;
-    position: absolute;
-    top: 85vh;
-    left: 49.3vw;
-    transform: translate(-50%, 0%);
-    font-size: 1.5rem;
-    color: white;
-    animation-name: not_show_scroll_text;
-    animation-duration: 0.2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-
-@keyframes not_show_scroll_text {
-    0% {
-
-        opacity: 100%;
-    }
-
-
-
-    100% {
-
-        opacity: 0%;
-    }
-}
 
 .showcase_toptext {
     position: relative;
