@@ -797,7 +797,7 @@ img {
 
     .flex_container>header {
         position: relative;
-        left: 30vw;
+        left: 20vw;
     }
 
     .flex_container>img {}
@@ -805,8 +805,8 @@ img {
 
     .dm_us_to_order {
         position: relative;
-        left: -5vw;
         top: -20px;
+        /*left是由上面的flexcontainter控制的*/
         width: 100vw;
         /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
         font-size: 4vw;
