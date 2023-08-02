@@ -610,7 +610,7 @@ img {
 
     }
 
-    scro .not_show_start_your_order_text {
+    .not_show_start_your_order_text {
         position: absolute;
         top: 42%;
         left: 50%;
@@ -629,6 +629,8 @@ img {
         position: absolute;
         width: 2.5px;
         height: 80px;
+        left: 49.3vw;
+        bottom: 22vh;
         background-color: white;
         animation-name: going_downward;
         animation-duration: 1.9s;
@@ -650,6 +652,31 @@ img {
             left: 49.3vw;
             bottom: -20vh;
 
+        }
+    }
+
+    .pls_scroll_down_not_showed {
+        position: relative;
+        width: 2.5px;
+        height: 80px;
+        animation-name: scroll_down_not_showed;
+        animation-duration: 1.9s;
+        animation-delay: 90ms;
+        animation-iteration-count: 1;
+        opacity: 0%;
+
+    }
+
+    @keyframes scroll_down_not_showed {
+        0% {
+
+            opacity: 0%;
+        }
+
+
+
+        100% {
+            opacity: 0%;
         }
     }
 
@@ -873,6 +900,18 @@ img {
         z-index: 20;
     }
 
+    .pls_scroll_down {
+        position: relative;
+        width: 2.5px;
+        height: 80px;
+        left: 49.3vw;
+        bottom: -42vh;
+        background-color: white;
+        animation-name: going_downward;
+        animation-duration: 1.9s;
+        animation-delay: 90ms;
+        animation-iteration-count: infinite;
+    }
 
     @keyframes going_downward {
         0% {
@@ -885,6 +924,31 @@ img {
             left: 49.3vw;
             bottom: -75vh;
 
+        }
+    }
+
+    .pls_scroll_down_not_showed {
+        position: relative;
+        width: 2.5px;
+        height: 80px;
+        animation-name: scroll_down_not_showed;
+        animation-duration: 1.9s;
+        animation-delay: 90ms;
+        animation-iteration-count: 1;
+        opacity: 0%;
+
+    }
+
+    @keyframes scroll_down_not_showed {
+        0% {
+
+            opacity: 0%;
+        }
+
+
+
+        100% {
+            opacity: 0%;
         }
     }
 
