@@ -304,6 +304,8 @@ img {
     position: relative;
     width: 2.5px;
     height: 80px;
+    left: 49.3vw;
+    bottom: -22vh;
     background-color: white;
     animation-name: going_downward;
     animation-duration: 1.9s;
@@ -332,6 +334,7 @@ img {
     position: relative;
     width: 2.5px;
     height: 80px;
+    opacity: 0%;
     background-color: white;
     animation-name: scroll_down_not_showed;
     animation-duration: 1.9s;
@@ -340,18 +343,6 @@ img {
 
 }
 
-@keyframes scroll_down_not_showed {
-    0% {
-
-        opacity: 100%;
-    }
-
-
-
-    100% {
-        opacity: 0%;
-    }
-}
 
 
 
@@ -667,19 +658,6 @@ img {
 
     }
 
-    @keyframes scroll_down_not_showed {
-        0% {
-
-            opacity: 0%;
-        }
-
-
-
-        100% {
-            opacity: 0%;
-        }
-    }
-
     .showcase_toptext {
         position: relative;
         width: 500px;
@@ -937,19 +915,6 @@ img {
         animation-iteration-count: 1;
         opacity: 0%;
 
-    }
-
-    @keyframes scroll_down_not_showed {
-        0% {
-
-            opacity: 0%;
-        }
-
-
-
-        100% {
-            opacity: 0%;
-        }
     }
 
     .show_start_your_order_text {
