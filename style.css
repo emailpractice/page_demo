@@ -11,6 +11,7 @@
 body,
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /*一般正常用maxwidth100%就可以處理overflow。上面那段是針對手機板的x-overflow*/
