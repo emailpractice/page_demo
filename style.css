@@ -494,6 +494,7 @@ img {
     position: relative;
     font-size: 2vw;
     color: white;
+    content: "左下角紅色按鈕私訊我們就可以點餐";
 }
 
 .messanger_example {
