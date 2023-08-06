@@ -4,17 +4,15 @@
 
     max-width: 100%;
 
-
-    /* 讓跳轉anchor的時候是滑下去的 而不是直接跳轉*/
 }
 
 body,
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    /* 讓跳轉anchor的時候是滑下去的 而不是直接跳轉*/
 }
 
-/*一般正常用maxwidth100%就可以處理overflow。上面那段是針對手機板的x-overflow*/
 
 
 
@@ -27,16 +25,12 @@ img {
 
 
 
-
 /*ctrl + 滾輪的那種放大 是會很大程度影響排版的。 如果看到liverserver上面
 有異樣，要記得先檢查放大比例是不是100。 不然程式碼調半天白搭。*/
 
 
 /*refresh 幾次之後 每次refresh都會自動跳到anchor連結的order page。*/
 /*重作logo 因為上下文字顏色不一樣 這次記得準備好方便調色的版本? 或至少黑白色都要做*/
-
-
-
 
 
 
