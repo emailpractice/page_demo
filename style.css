@@ -22,7 +22,43 @@ img {
     text-align: center;
 }
 
+.container {
+    position: relative;
+    width: 500px;
+    padding: 30px;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    background-color: #f71051;
+    z-index: 1;
+}
 
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+legend {
+    color: white;
+}
+
+.rowname {
+    color: #eeeeee;
+}
+
+#submit {
+    border: none;
+    background-color: orangered;
+    color: white;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    background-color: #ddb5b5;
+}
 
 
 /*ctrl + 滾輪的那種放大 是會很大程度影響排版的。 如果看到liverserver上面
