@@ -726,22 +726,45 @@ input:-webkit-autofill:focus {
         left: 92vw;
     }
 
-    .anchor_button_order_page {
-        width: 4.5rem;
-        height: 2rem;
+    .anchor_button_order_page_center {
+        width: 7rem;
+        height: 2.5rem;
         background-color: brown;
         border-radius: 3px;
         position: fixed;
-        top: 4.3vh;
-        left: 69vw;
-        font-size: 0.75rem;
+        top: 52vh;
+        left: 34vw;
+        font-size: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
         z-index: 20;
+        animation-name: fade_in_anchorbutton;
+        animation-duration: 0.9s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
 
+    .anchor_button_order_page_topright {
+        width: 5rem;
+        height: 2rem;
+        background-color: brown;
+        border-radius: 3px;
+        position: fixed;
+        top: 4.5vh;
+        left: 65vw;
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        z-index: 1;
+        animation-name: fade_in_anchorbutton;
+        animation-duration: 0.9s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
 
     .show_start_your_order_text {
         position: absolute;
@@ -1019,20 +1042,44 @@ input:-webkit-autofill:focus {
         left: 93vw;
     }
 
-    .anchor_button_order_page {
-        width: 4.5rem;
-        height: 2rem;
+    .anchor_button_order_page_center {
+        width: 7rem;
+        height: 2.5rem;
         background-color: brown;
         border-radius: 3px;
         position: fixed;
-        top: 4.2vh;
-        left: 76vw;
-        font-size: 0.75rem;
+        top: 52vh;
+        left: 40vw;
+        font-size: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
         z-index: 20;
+        animation-name: fade_in_anchorbutton;
+        animation-duration: 0.9s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    .anchor_button_order_page_topright {
+        width: 5rem;
+        height: 2rem;
+        background-color: brown;
+        border-radius: 3px;
+        position: fixed;
+        top: 4.5vh;
+        left: 75vw;
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        z-index: 1;
+        animation-name: fade_in_anchorbutton;
+        animation-duration: 0.9s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
 
     .pls_scroll_down {
