@@ -103,11 +103,36 @@ input:valid~label {
     cursor: pointer;
     font-size: 1em;
     font-weight: 600;
+    display: grid;
+    place-content: center;
 
 }
 
 #submit:HOVER {
     background-color: goldenrod;
+}
+
+#loader {
+    position: relative;
+    left: 48%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    background-color: black;
+    border-top-color: #ffffff;
+    animation: loading_rotate 1s ease infinite;
+}
+
+@keyframes loading_rotate {
+    0% {
+        transform: rotate(0turn);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+
 }
 
 input:-webkit-autofill {
@@ -316,27 +341,67 @@ input:-webkit-autofill:focus {
 
 
 /*字體加粗一些會比較好看。可能是微軟正黑體? 或是直接加粗?*/
-.anchor_button_order_page {
+.anchor_button_order_page_center {
     width: 7Vw;
     height: 3.5vw;
     background-color: brown;
     border-radius: 3px;
     position: fixed;
-    top: 4.5vh;
-    left: 85vw;
+    top: 47.5vh;
+    left: 46vw;
     font-size: 1.2vw;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     z-index: 1;
+    animation-name: fade_in_anchorbutton;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
-.anchor_button_order_page:HOVER {
+.anchor_button_order_page_center:HOVER {
 
     background-color: goldenrod;
 }
 
+.anchor_button_order_page_topright {
+    width: 7Vw;
+    height: 3.5vw;
+    background-color: brown;
+    border-radius: 3px;
+    position: fixed;
+    top: 4.5vh;
+    left: 82vw;
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+    animation-name: fade_in_anchorbutton;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade_in_anchorbutton {
+    from {
+        opacity: 0%;
+
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+
+.anchor_button_order_page_topright:HOVER {
+
+    background-color: goldenrod;
+}
 
 
 /*其他視窗版本的都還是absolute 之後可以去統一。 當時改成Relative是因為網站從下面滑到最上時，showcasetoptetxt會跑來最上面的位置，
@@ -344,7 +409,7 @@ input:-webkit-autofill:focus {
 .show_start_your_order_text {
     position: relative;
     top: 42.5%;
-    left: 37%;
+    left: 38.5%;
     color: rgb(252, 252, 252);
     font-size: 3vw;
     animation-name: fade_in_start_your_order_text;
@@ -369,7 +434,7 @@ input:-webkit-autofill:focus {
 .not_show_start_your_order_text {
     position: relative;
     top: 42.5%;
-    left: 37%;
+    left: 38.5%;
     color: rgb(252, 252, 252);
     font-size: 3vw;
     animation-name: fade_out_start_your_order_text;
