@@ -15,51 +15,112 @@ html {
 
 
 
-
-
 img {
     color: white;
     text-align: center;
 }
 
-.container {
+
+
+
+
+.form-box {
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 800px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2 {
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.inputbox {
+    position: relative;
+    margin: 100px 0;
     width: 500px;
-    padding: 30px;
-    border: 1px solid #eeeeee;
-    border-radius: 10px;
-    background-color: #f71051;
-    z-index: 1;
+    border-bottom: 2px solid #fff;
 }
 
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 2.5em;
+    pointer-events: none;
+    transition: .5s;
+}
 
-input {
+input:focus~label,
+input:valid~label {
+    top: -19px;
+}
+
+.inputbox input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+    padding: 0 35px 0 5px;
+    color: #fff;
 }
 
-legend {
-    color: white;
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
 }
 
-.rowname {
-    color: #eeeeee;
-}
+
+
+
 
 #submit {
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    background: #fff;
     border: none;
-    background-color: orangered;
-    color: white;
-    width: 200px;
-    margin-top: 10px;
-    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+
 }
 
-#submit:hover {
-    background-color: #ddb5b5;
+#submit:HOVER {
+    background-color: goldenrod;
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px rgb(4, 4, 4) inset;
+    /* Change the color to your own background color */
+    -webkit-text-fill-color: #8e8b8b;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px rgb(6, 6, 6) inset;
+    /*your box-shadow*/
+    -webkit-text-fill-color: #8e8d8d;
+}
 
 /*ctrl + 滾輪的那種放大 是會很大程度影響排版的。 如果看到liverserver上面
 有異樣，要記得先檢查放大比例是不是100。 不然程式碼調半天白搭。*/

@@ -190,6 +190,7 @@
     <div class="parser2"></div>
   </section>
 
+  <!--  MESSENGER傳送訊息點餐的版本
   <section class="flex_container" id="the_order_page">
     <header class="dm_us_to_order">左下角紅色按鈕私訊我們就可以點餐</header>
     <img class="messanger_example" srcset="messanger範例_medium.webp 300w, messanger範例.webp 800w"
@@ -198,31 +199,40 @@
 
     <div class="price_text">餐盒一份150$，免外送費。</div>
   </section>
+-->
 
-  <!-- 表單 
-  <div class="container">
+
+  <section id="the_order_page">
     <form method="post"
       action="https://script.google.com/macros/s/AKfycbwpQ_mRRbIlBo8O9oOp7pAgi4tSUKw8_LuajqZSCqVnMyBGYWTRxPDIgBCL2qqmdS2f/exec"
       name="contact-form">
-      <fieldset>
-        <legend>訂購表單</legend>
-        <label class="rowname">份數</label>
-        <input type="text" name="份數" size="40">
-        <br>
-        <label class="rowname">地址</label>
-        <input type="text" name="地址" size="40">
-        <br>
-        <label class="rowname">電話</label>
-        <input type="text" name="電話" size="40">
-        <br>
-        <label class="rowname">(特殊需求)</label>
-        <input type="text" name="(特殊需求)" size="40">
-        <input type="submit" value="Submit" id="submit">
-      </fieldset>
-
+      <div class="form-box">
+        <div class="form-value">
+          <form action="">
+            <h2>開始點餐</h2>
+            <div class="inputbox">
+              <ion-icon name="restaurant-outline"></ion-icon>
+              <input type="text" name="份數" required>
+              <label for="">份數</label>
+            </div>
+            <div class="inputbox">
+              <ion-icon name="location-outline"></ion-icon> <input type="text" name="地址" required>
+              <label for="">地址</label>
+            </div>
+            <div class="inputbox">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <input type="text" name="電話" required>
+              <label for="">電話</label>
+            </div>
+            <input type="submit" value="送出" id="submit">
+        </div>
+      </div>
     </form>
-  </div>
--->
+  </section>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
   <footer>
     <div class="foot">Copyright © crispyporkset All Rights Reserved.</div>
   </footer>

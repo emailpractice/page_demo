@@ -80,7 +80,7 @@ const form = document.forms['contact-form']
 form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-    .then(response => alert("Thank you! your form is submitted successfully."))
+    .then(response => alert("收到您的訂餐訊息了，餐點送到時會以電話通知"))
     .then(() => { window.location.reload(); })
     .catch(error => console.error('Error!', error.message))
 })
