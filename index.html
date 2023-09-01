@@ -19,7 +19,6 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="二十分鐘內外送到府，讓客人享用剛出爐的完美金黃脆皮燒肉!">
   <meta name="viewport" content="height=device-height, 
                       width=device-width, initial-scale=1.0, 
@@ -37,73 +36,83 @@
 
 
   <!-- 讓Google 結構化資料的 JSON-LD 標記。是seo相關的措施，讓網站被搜尋時顯示QA、讓GOOGLE知道「脆皮燒肉」四個字指的是商品而不是食譜......-->
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "QAPage",
-      "mainEntity": {
-        "@type": "Question",
-        "name": "一份餐盒多少錢?",
-        "answerCount": "1",
-        "acceptedAnswer": {
-         "@type": "Answer",
-        "text": "餐盒一份150元，免外送費。二十分鐘內送到。"
-        }
-      }
-    }
-    {
-        "@context": "http://schema.org",
-        "@type": "QAPage",
-        "mainEntity": {
-          "@type": "Question",
-          "name": "哪些地方可以外送呢?",
-          "answerCount": "1",
-          "acceptedAnswer": {
-           "@type": "Answer",
-          "text": "為了確保餐點都是以剛出爐的狀態被享用，我們只服務台南市的東區、北區、中西區、南區、永康區、仁德區"
-          }
-        }
-      }
 
-      {
-        "@context": "https://schema.org",
-        "@type": "Restaurant",
-        "name": "稍飽脆皮燒肉",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "148 W 51st St",
-          "addressLocality": "Tainan",
-          "addressRegion": "TW",
-          "postalCode": "701020",
-          "addressCountry": "TW"
-        },
-       
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 22.993829044644386,
-          "longitude": 120.22297432510985
-        },
-        "telephone": "+886-956909890",
-        "servesCuisine": "Taiwan",
-        "priceRange": "$",
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday"
-              "Wednesday"
-              "Thursday"
-              "Friday"
-              "Saturday"
-              "Sunday"
+
+
+
+
+
+  ========================================
+
+  <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Restaurant",
+          "image": [
+            "https://www.crispypork.com/%E8%B1%AC%E9%87%8C%E8%82%8C.webp",
+            "https://www.crispypork.com/%E9%85%B8%E8%8F%9C.webp",
+            "https://www.crispypork.com/%E6%BA%8F%E5%BF%83%E8%9B%8B.webp
             ],
-            "opens": "11:00",
-            "closes": "19:00"
+          "name": "稍飽脆皮燒肉",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "66巷 和平東路三段",
+            "addressLocality": "Tainan",
+            "addressRegion": "TW",
+            "postalCode": "701020",
+            "addressCountry": "TW"
           },
-        ],
-        "acceptsReservations": "True"
-      }
+          "review": {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "KUAN-WEI"
+            }
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 22.993829044644386,
+            "longitude": 120.22297432510985
+          },
+          "url": "https://www.crispypork.com/",
+          "telephone": "+886-956909890",
+          "servesCuisine": "Taiwan",
+          "priceRange": "$",
+          "openingHoursSpecification": [
+
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+              ],
+              "opens": "11:00",
+              "closes": "19:00"
+            }
+            
+          ],
+          "menu": "https://www.crispypork.com/",
+          "acceptsReservations": "True",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "一份餐盒多少錢?",
+            "answerCount": "1",
+            "acceptedAnswer": {
+             "@type": "Answer",
+            "text": "餐盒一份150元，免外送費。二十分鐘內送到。"
+            }
+          ]}
+        }
     </script>
 
 
