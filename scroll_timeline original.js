@@ -90,9 +90,7 @@ window.addEventListener('scroll', () => {
   }
 })
 
-elem_submit.onclick = function () {
 
-}
 
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwpQ_mRRbIlBo8O9oOp7pAgi4tSUKw8_LuajqZSCqVnMyBGYWTRxPDIgBCL2qqmdS2f/exec'
