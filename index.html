@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+<!-- 好像應該刪掉這行? 畢竟我這不是英文網站。-->
 <html lang="en">
 
 
@@ -19,14 +20,14 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="二十分鐘內外送到府，讓客人享用剛出爐的完美金黃脆皮燒肉!">
+  <meta name="description" content="十五分鐘內外送到府，讓客人享用剛出爐的完美金黃脆皮燒肉!">
   <meta name="viewport" content="height=device-height, 
                       width=device-width, initial-scale=1.0, 
                       minimum-scale=1.0, 
                       target-densitydpi=device-dpi">
   <!-- 上面這一大串是因為chrome會讓position fixed的圖片還是會隨著上下滾輪稍微移動一點點、寬度縮到比較小(小於700左右)的時候，上下會有空白。但明明img的長寬已經跟設備的長寬等大，應該要占滿整個畫面。
                         https://stackoverflow.com/questions/44679794/position-fixed-on-chrome-mobile-causing-element-to-move-on-scroll-up-down/51322362#51322362?newreg=ccca2ba641424c5098dd310e383a976b -->
-  <title>稍飽脆皮燒肉 | 二十分鐘外送到府</title>
+  <title>米五餐盒 | 點餐十五分鐘到府</title>
   <link rel="icon" type="image/x-icon" href="/titleicon.ico">
 
 
@@ -122,87 +123,95 @@
   <section>
     <div class="cover">
       <img class=" bground_not_blur" id="ele_bg" srcset="手機板背景.webp 300w, 背景.webp 800w"
-        sizes="(max-width: 900px) 100px ,400px" src="./背景.webp" alt="一位廚師站立著，雙手在砧板上精細的分切著料理">
+        sizes="(max-width: 900px) 100px ,400px" src="./背景.webp" alt="一個女人享受的品嘗著美食">
     </div>
-    <img class="show_logo1" src="./logo 全白_small.webp" id="ele_logo1"
+    <img class="show_logo1" src="./幼圓字體強調字體.png" id="ele_logo1"
       alt="燒肉餐廳的logo。是全白的。圖案則是一條簡單的s型的曲線呈舞動之勢，騰於兩圈漣漪之上。整體是一個單純乾淨的圖形，而型態卻隱含著動感。在動靜的制衡中呈現中華文化含蓄的美感、抑之顯之的訊息傳遞手法。">
     <div class="black_not_overlay" id="ele_overlay"></div>
-    <header class="show_start_your_order_text" id="ele_start_your_order_text">二十分鐘外送到府</header>
+    <img class="show_fifteen_delivery_text" id="ele_fifteen_delivery_text" src="fifteen_min.png"></img>
 
 
     <a href="https://www.facebook.com/crispyporkset">
       <img class="fbicon" src="./fb logo white_small.webp" alt="白色的幾何線條fb圖標，點擊這裡就可以連結至我們的粉專。">
     </a>
 
-    <a id="anchor_button" href="#the_order_page">
-      <div class="anchor_button_order_page_center" id="ele_anchorbutton">立即點餐</div>
-    </a>
+    <div class="subtitle" id="ele_subtitle">理念 & 菜單 </div>
 
 
     <div class="pls_scroll_down" id="ele_downwardline"> </div>
 
 
-    <div class="parser"></div>
   </section>
 
 
   <section>
-    <header class="showcase_toptext">aroma the</header>
+    <header class="showcase_toptext"> 一熱頂三鮮</header>
     <div class="showcase_toptext_line"></div>
 
     <img class="showcase_pic" srcset="豬里肌_small230.webp 300w, 豬里肌.webp 800w" sizes="(max-width: 900px) 100px ,400px"
-      src="./豬里肌.webp" alt="溫暖的自然光灑在窗邊的砧板上。砧板上放著剛烤好分切的脆皮烤里肌，旁邊放著一碗咖啡色的燒肉沾醬與烤桃子。">
-    <p class="showcase_text">脆皮烤里肌</p>
+      src="./豬里肌.webp" alt="照片是一碗熱騰騰的白飯。">
+    <!-- 幾等米只表示了米裡面的雜質含量，
+      事實上米的風味主要由產地與碾米之後經過了多久決定。ricefriday採用現輾的米，是市面上吃不到的頂級風味。 -->
+    <p class="showcase_text">鮮輾白米</p>
 
     <img class="showcase_pic" srcset="酸菜_small.webp 300w, 酸菜.webp 800w" sizes="(max-width: 900px) 100px ,400px"
-      src="./酸菜.webp" alt="艷粉色的德國酸菜盛在白色的器皿中勾起人的食慾。一旁擺設著表面晶瑩反光的一串番茄">
+      src="./酸菜.webp" alt="粉紅色的德國酸菜。">
     <p class="showcase_text">德國酸菜</p>
 
     <img class="showcase_pic" srcset="海帶芽_small.webp 300w, 海帶芽.webp 800w" sizes="(max-width: 900px) 100px ,400px"
-      src="./海帶芽.webp" alt="竹篩網上放著乾的海帶芽。白色的背景與之搭配，給人一種簡潔的感覺">
-    <p class="showcase_text">魚露海帶芽</p>
-
-    <img class="showcase_pic" srcset="溏心蛋_small.webp 300w, 溏心蛋.webp 800w" sizes="(max-width: 900px) 100px ,400px"
-      src="./溏心蛋.webp" alt="木桌上黑色的釉烤陶碗盛裝著兩瓣醣心蛋，濃稠的蛋黃反射著光芒，看起來金黃可口。">
-    <p class="showcase_text">日式溏心蛋</p>
+      src="./海帶芽.webp" alt="購入私人機台，新鮮磨製的獨門香料粉?">
+    <p class="showcase_text">獨門料粉</p>
 
 
-    <div class="parser1"></div>
+
+    <div class="parser"></div>
 
   </section>
 
   <article>
-    <header class="aroma_the_page_tittle">aroma the</header>
+    <header class="aroma_the_page_tittle"></header>
     <p class="aroma_the_page_text">
-      恰如其份的香氣、<br />
-      獨一無二的空氣。<br />
-    </p>
-    <p class="aroma_the_page_text2">
-      簡約的點餐、優雅的桌面，<br />
+      <br>以「本地製造，本地食用」為宗旨
+      <br />
+      <br>從點完餐到上桌
+      <br />
+      <br>在十五分鐘內將最新鮮、美味的料理送至您的門前！
+      <br />
     </p>
 
-    <p class="aroma_the_page_text3">
-      是用餐──也是日常的──品味。
-    </p>
   </article>
 
-  <section>
-    <img class="whole_set_img" srcset="餐盒_medium.webp 300w, 餐盒.webp 800w" sizes="(max-width: 900px) 100px ,400px"
-      src="./餐盒.webp"
-      alt="高雅的純色灰石桌上擺著具有舒適觸感的木纖維餐盒。餐盒裡裝著上面展示過的所有料理，共同組成一個餐盒。由左到右分別是粉色的德國酸菜、黑色的魚露海帶芽、兩瓣溏心蛋、九片脆皮燒肉。桌面上還擺設著、隨意地妝點著綠色的香料與幾瓣白色的大蒜。">
-    <div class="parser2"></div>
-  </section>
 
-  <!--  MESSENGER傳送訊息點餐的版本
-  <section class="flex_container" id="the_order_page">
-    <header class="dm_us_to_order">左下角紅色按鈕私訊我們就可以點餐</header>
-    <img class="messanger_example" srcset="messanger範例_medium.webp 300w, messanger範例.webp 800w"
-      sizes="(max-width: 900px) 100px ,400px" src="./messanger範例.webp"
-      alt="透過展示一個messanger的對話紀錄來示範給客人看應如何傳訊息點餐。點餐訊息的範例是:2(份數)、台北市大安區建國南路二段(地址)、12點半到(沒有填時間會預設您想我們現點現送)">
 
-    <div class="price_text">餐盒一份150$，免外送費。</div>
-  </section>
--->
+
+
+  <div class="container">
+    <header>
+      <div class="title">PRODUCT LIST</div>
+      <div class="icon-cart">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+        </svg>
+        <span>0</span>
+      </div>
+    </header>
+    <div class="listProduct">
+
+    </div>
+  </div>
+  <div class="cartTab">
+    <h1>Shopping Cart</h1>
+    <div class="listCart">
+
+    </div>
+    <div class="btn">
+      <button class="close">CLOSE</button>
+      <button class="checkOut">Check Out</button>
+    </div>
+  </div>
+
+
 
 
   <section id="the_order_page">
