@@ -2,8 +2,8 @@ const elem_bg = document.querySelector('#ele_bg');
 const elem_overlay = document.querySelector('#ele_overlay');
 const elem_downwardline = document.querySelector('#ele_downwardline');
 const elem_logo1 = document.querySelector('#ele_logo1');
-const elem_fifteen_delivery_text = document.querySelector('#ele_fifteen_delivery_text');
-const elem_subtitle = document.querySelector('#ele_subtitle');
+const elem_start_your_order_text = document.querySelector('#ele_start_your_order_text');
+const elem_anchorbutton = document.querySelector('#ele_anchorbutton');
 const elem_submit = document.querySelector('#submit');
 
 
@@ -12,8 +12,8 @@ function add_black_overlay() {
     elem_overlay.classList.add('black_overlay');
     elem_downwardline.classList.add('pls_scroll_down_not_showed');
     elem_logo1.classList.add('not_show_logo1');
-    elem_fifteen_delivery_text.classList.add('not_show_fifteen_delivery_text');
-    elem_subtitle.classList.add('not_show_subtitle');
+    elem_start_your_order_text.classList.add('not_show_start_your_order_text');
+    elem_anchorbutton.classList.add('anchor_button_order_page_topright');
 }
 
 function remove_black_overlay() {
@@ -21,8 +21,8 @@ function remove_black_overlay() {
     elem_overlay.classList.remove('black_overlay');
     elem_downwardline.classList.remove('pls_scroll_down_not_showed');
     elem_logo1.classList.remove('not_show_logo1');
-    elem_fifteen_delivery_text.classList.remove('not_show_fifteen_delivery_text');
-    elem_subtitle.classList.remove('not_show_subtitle');
+    elem_start_your_order_text.classList.remove('not_show_start_your_order_text');
+    elem_anchorbutton.classList.remove('anchor_button_order_page_topright');
 }
 
 
@@ -94,7 +94,7 @@ const addDataToHTML = () => {
                 `<img src="${product.image}" alt="">
                 <h2>${product.name}</h2>
                 <div class="price">$${product.price}</div>
-                <button class="addCart"> 選購</button>`;
+                <button class="addCart">Add To Cart</button>`;
             listProductHTML.appendChild(newProduct);
         });
     }

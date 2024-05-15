@@ -9,10 +9,8 @@
 body,
 html {
     overflow-x: hidden;
-    overflow-x: clip;
-    /*用hidden的話，會有滑到最底卡住，接著滑到上面爆版的問題。  
-    但用clip的話 safari不適用。所以上面多加了一行hidden。 因為寫在後面的css優先順位比較高，平常會套用clip。clip不適用再hidden*/
-
+    scroll-behavior: smooth;
+    /* 讓跳轉anchor的時候是滑下去的 而不是直接跳轉*/
 }
 
 
@@ -281,9 +279,9 @@ input:-webkit-autofill:focus {
 
 .show_logo1 {
     position: relative;
-    width: 40vw;
-    top: -23vw;
-    left: -15vw;
+    width: 15vw;
+    top: -5vw;
+    left: -1vw;
     opacity: 0;
     animation-name: fade_in_logo1;
     animation-duration: 0.3s;
@@ -306,9 +304,9 @@ input:-webkit-autofill:focus {
 
 .not_show_logo1 {
     position: relative;
-    width: 40vw;
-    top: -23vw;
-    left: -15vw;
+    width: 15vw;
+    top: -5vw;
+    left: -1vw;
     animation-name: fade_out_logo1;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
@@ -341,22 +339,78 @@ input:-webkit-autofill:focus {
 
 
 /*字體加粗一些會比較好看。可能是微軟正黑體? 或是直接加粗?*/
+.anchor_button_order_page_center {
+    width: 7Vw;
+    height: 3.5vw;
+    background-color: brown;
+    border-radius: 3px;
+    position: fixed;
+    top: 47.5vh;
+    left: 46vw;
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+    animation-name: fade_in_anchorbutton;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.anchor_button_order_page_center:HOVER {
+
+    background-color: goldenrod;
+}
+
+.anchor_button_order_page_topright {
+    width: 7Vw;
+    height: 3.5vw;
+    background-color: brown;
+    border-radius: 3px;
+    position: fixed;
+    top: 4.5vh;
+    left: 82vw;
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+    animation-name: fade_in_anchorbutton;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade_in_anchorbutton {
+    from {
+        opacity: 0%;
+
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
 
 
+.anchor_button_order_page_topright:HOVER {
 
-
-
+    background-color: goldenrod;
+}
 
 
 /*其他視窗版本的都還是absolute 之後可以去統一。 當時改成Relative是因為網站從下面滑到最上時，showcasetoptetxt會跑來最上面的位置，
 我在猜會不會是因為absolute的屬性沒有佔住應該佔的空間，才會發生這樣的事情。所以就改成relative。結果還是會發生問題，所以其他版本的我就讓他們維持absolute了*/
-.show_fifteen_delivery_text {
-    position: absolute;
-    top: 37.5%;
+.show_start_your_order_text {
+    position: relative;
+    top: 42.5%;
     left: 38.5%;
     color: rgb(252, 252, 252);
-    width: 35%;
-    animation-name: fade_in_fifteen_delivery_text;
+    font-size: 3vw;
+    animation-name: fade_in_start_your_order_text;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -364,7 +418,7 @@ input:-webkit-autofill:focus {
 
 }
 
-@keyframes fade_in_fifteen_delivery_text {
+@keyframes fade_in_start_your_order_text {
     from {
         opacity: 0%;
 
@@ -375,14 +429,13 @@ input:-webkit-autofill:focus {
     }
 }
 
-.not_show_fifteen_delivery_text {
-    position: absolute;
-
-    top: 37.5%;
+.not_show_start_your_order_text {
+    position: relative;
+    top: 42.5%;
     left: 38.5%;
     color: rgb(252, 252, 252);
-    width: 35%;
-    animation-name: fade_out_fifteen_delivery_text;
+    font-size: 3vw;
+    animation-name: fade_out_start_your_order_text;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -390,7 +443,7 @@ input:-webkit-autofill:focus {
 
 }
 
-@keyframes fade_out_fifteen_delivery_text {
+@keyframes fade_out_start_your_order_text {
     from {
         opacity: 100%;
 
@@ -400,64 +453,15 @@ input:-webkit-autofill:focus {
         opacity: 0%;
     }
 }
-
-.subtitle {
-    position: relative;
-    top: -66VH;
-    left: 45VW;
-    color: #f5c905;
-    font-size: 1.2VW;
-    animation-name: fade_in_subtitle;
-    animation-duration: 0.3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    opacity: 0%;
-
-}
-
-@keyframes fade_in_subtitle {
-    from {
-        opacity: 0%;
-
-    }
-
-    to {
-        opacity: 100%;
-    }
-}
-
-.not_show_subtitle {
-    position: relative;
-    top: 30VH;
-    left: 44VW;
-    color: #eee;
-    font-size: 1.2VW;
-    opacity: 100%;
-    animation-name: fade_out_subtitle;
-    animation-duration: 0.3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    opacity: 0%;
-
-}
-
-@keyframes fade_out_subtitle {
-    from {
-        opacity: 100%;
-
-    }
-
-    to {
-        opacity: 0%;
-    }
-}
-
 
 /*其他版本是absolute*/
 .pls_scroll_down {
-    position: absolute;
-    width: 1.1px;
-    background-color: rgb(250, 213, 6);
+    position: relative;
+    width: 2.5px;
+    height: 80px;
+    left: 49.3vw;
+    bottom: -22vh;
+    background-color: white;
     animation-name: going_downward;
     animation-duration: 1.9s;
     animation-delay: 90ms;
@@ -467,31 +471,22 @@ input:-webkit-autofill:focus {
 
 @keyframes going_downward {
     0% {
-        height: 2vh;
-        left: 47.5vw;
-        bottom: 12vh;
+        left: 49.3vw;
+        bottom: -22vh;
 
     }
 
-    40% {
-
-        height: 16vh;
-        left: 47.5vw;
-        bottom: -2vh;
-
-    }
 
 
     100% {
-        left: 47.5vw;
-        bottom: -55vh;
-
+        left: 49.3vw;
+        bottom: -60vh;
 
     }
 }
 
 .pls_scroll_down_not_showed {
-    position: absolute;
+    position: relative;
     width: 2.5px;
     height: 80px;
     opacity: 0%;
@@ -510,15 +505,15 @@ input:-webkit-autofill:focus {
     position: relative;
     width: 500px;
     color: white;
-    font-size: 2.5vw;
+    font-size: 4vw;
     left: 42.5%;
-    top: -10vh;
+    top: -29vh;
 }
 
 .showcase_toptext_line {
     position: relative;
     left: 47.5%;
-    top: -1vh;
+    top: -27vh;
     width: 5vw;
     height: 2px;
     background-color: white;
@@ -542,7 +537,7 @@ input:-webkit-autofill:focus {
     position: relative;
     height: 18vw;
     left: 25vw;
-    top: -12vw;
+    top: -32vw;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     color: white;
@@ -556,6 +551,9 @@ input:-webkit-autofill:focus {
     margin-bottom: 42%;
 }
 
+.parser1 {
+    margin-bottom: 45%;
+}
 
 
 .aroma_the_page_tittle {
@@ -575,7 +573,7 @@ input:-webkit-autofill:focus {
 
     position: relative;
     top: -40vw;
-    left: 36.7vw;
+    left: 40.7vw;
     color: white;
 
 }
@@ -618,9 +616,57 @@ input:-webkit-autofill:focus {
 
 }
 
+#the_order_page {
+    position: relative;
+    top: 100px;
+}
 
 
+.flex_container {
+    position: relative;
+    top: 100px;
+    width: 100vw;
+    height: 40vh;
 
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.flex_container>header {
+    position: relative;
+    left: 130px;
+}
+
+.flex_container>div {
+    position: relative;
+    left: 230px;
+}
+
+
+.dm_us_to_order {
+    position: relative;
+    font-size: 2vw;
+    color: white;
+}
+
+.messanger_example {
+    position: relative;
+    top: -30px;
+    width: 750px;
+    height: auto;
+    flex-shrink: 1;
+}
+
+.price_text {
+    position: relative;
+    top: -115px;
+    width: 30vw;
+    font-size: 1.5vw;
+    color: #fff;
+
+}
 
 .foot {
     position: relative;
@@ -645,12 +691,15 @@ input:-webkit-autofill:focus {
 }
 
 svg {
-    position: relative;
-    left: 22.4vw;
     width: 30px;
 }
 
-
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
 
 .icon-cart {
     position: relative;
@@ -659,25 +708,22 @@ svg {
 
 .icon-cart span {
     position: absolute;
-    background-color: rgb(250, 213, 6);
+    background-color: red;
     width: 30px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color: #1b1b1b;
-    font-size: 1.2vw;
+    color: #fff;
     top: 50%;
     right: -20px;
 }
 
 .title {
-    position: relative;
-    top: -20px;
     font-size: xx-large;
     color: #f3f3f3;
-    z-index: 23;
+    z-index: 21;
 }
 
 .listProduct .item img {
@@ -707,13 +753,13 @@ svg {
 
 .listProduct .item .price {
     letter-spacing: 7px;
-    font-size: medium;
+    font-size: small;
     color: #242423;
 }
 
 .listProduct .item button {
-    background-color: rgb(250, 213, 6);
-    color: rgb(3, 3, 3);
+    background-color: #ffffff;
+    color: #cace07;
     border: none;
     padding: 5px 10px;
     margin-top: 10px;
@@ -850,33 +896,69 @@ body.showCart .container {
         left: 92vw;
     }
 
+    .anchor_button_order_page_center {
+        width: 7rem;
+        height: 2.5rem;
+        background-color: brown;
+        border-radius: 3px;
+        position: fixed;
+        top: 52vh;
+        left: 34vw;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        z-index: 20;
+        animation-name: fade_in_anchorbutton;
+        animation-duration: 0.9s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
 
+    .anchor_button_order_page_topright {
+        width: 5rem;
+        height: 2rem;
+        background-color: brown;
+        border-radius: 3px;
+        position: fixed;
+        top: 4.5vh;
+        left: 65vw;
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        z-index: 1;
+        animation-name: fade_in_anchorbutton;
+        animation-duration: 0.9s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
 
-    .show_fifteen_delivery_text {
+    .show_start_your_order_text {
         position: absolute;
-        top: 55%;
+        top: 42.5%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: rgb(252, 252, 252);
         font-size: 4.5vw;
-        animation-name: fade_in_fifteen_delivery_text;
+        animation-name: fade_in_start_your_order_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
         opacity: 0%;
 
-
-
     }
 
-    .not_show_fifteen_delivery_text {
+    .not_show_start_your_order_text {
         position: absolute;
         top: 42%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
         font-size: 4.5vw;
-        animation-name: fade_out_fifteen_delivery_text;
+        animation-name: fade_out_start_your_order_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -1031,6 +1113,22 @@ body.showCart .container {
         top: 30vh;
     }
 
+    .flex_container {
+        position: relative;
+        top: 120vh;
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5px;
+    }
+
+    .flex_container>header {
+        position: relative;
+        left: 20vw;
+    }
+
+    .flex_container>img {}
 
 
     .dm_us_to_order {
@@ -1114,6 +1212,45 @@ body.showCart .container {
         left: 93vw;
     }
 
+    .anchor_button_order_page_center {
+        width: 7rem;
+        height: 2.5rem;
+        background-color: brown;
+        border-radius: 3px;
+        position: fixed;
+        top: 52vh;
+        left: 40vw;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        z-index: 20;
+        animation-name: fade_in_anchorbutton;
+        animation-duration: 0.9s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    .anchor_button_order_page_topright {
+        width: 5rem;
+        height: 2rem;
+        background-color: brown;
+        border-radius: 3px;
+        position: fixed;
+        top: 4.5vh;
+        left: 75vw;
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        z-index: 1;
+        animation-name: fade_in_anchorbutton;
+        animation-duration: 0.9s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
 
     .pls_scroll_down {
         position: relative;
@@ -1154,14 +1291,14 @@ body.showCart .container {
 
     }
 
-    .show_fifteen_delivery_text {
+    .show_start_your_order_text {
         position: absolute;
         top: 42.5%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: rgb(252, 252, 252);
         font-size: 4vw;
-        animation-name: fade_in_fifteen_delivery_text;
+        animation-name: fade_in_start_your_order_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -1169,14 +1306,14 @@ body.showCart .container {
 
     }
 
-    .not_show_fifteen_delivery_text {
+    .not_show_start_your_order_text {
         position: absolute;
         top: 42%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
         font-size: 4vw;
-        animation-name: fade_out_fifteen_delivery_text;
+        animation-name: fade_out_start_your_order_text;
         animation-duration: 0.3s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
@@ -1309,9 +1446,37 @@ body.showCart .container {
 
     }
 
+    .flex_container>header {
+        position: relative;
+        left: 200px;
+    }
+
+    .flex_container>img {}
 
 
+    .dm_us_to_order {
+        position: relative;
+        top: -15px;
+        width: 50vw;
+        /*我加了width的長度，這樣可以限制div不要突出到右邊，讓網頁需要往右滑*/
+        font-size: 3vw;
+        color: white;
+    }
 
+    .messanger_example {
+        width: 750px;
+        height: auto;
+        flex-shrink: 1;
+    }
+
+    .price_text {
+        position: relative;
+        top: -50px;
+        width: 30vw;
+        font-size: 2vw;
+        color: #fff;
+
+    }
 
     .foot {
         position: relative;
